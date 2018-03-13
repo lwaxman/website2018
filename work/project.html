@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Laurie Waxman</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+	    <canvas id="canvas"></canvas>
+	   <div class="menu">
+            <a href="http://lauriewaxman.com/">Laurie Waxman</a>
+            <div class="right">
+                <a href="http://lauriewaxman.com/" class="selected">Work</a>
+                <a href="http://lauriewaxman.com/about.php">About</a>
+            </div>
+        </div>
+		<div class="content">
+			<h2 class="projectTitle">Air Quality</h2>
+			<p>A drawing tool that uses real <a href="https://en.wikipedia.org/wiki/Air_quality_index">AQI (Air Quality Index)</a> data from a chosen list of cities to control the brush; the more polluted the air, the darker and broader the brush. There is no way to clear the drawing (other than using the least polluted city's brush as an eraser of sorts)&mdash;an obvious enough metaphor.</p>
+			<p>Uses the <a href="http://aqicn.org/here/">aqicn.org</a> API.</p>
+			<p> <a href="airquality/">Give it a go yourself.</a></p>
+			<img class="big space_top" src="images/airquality.jpg">
+			<!-- <img class="big last" src="images/aqi_2.png"> -->
+		</div>
+    	<script src="../js/automatab.js"></script>
+    	<script src="../js/activate.js"></script>
+		<script>
+			activate("airquality");
+		</script>
+    </body>
+</html>

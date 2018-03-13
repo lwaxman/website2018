@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=Alegreya:700');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:700');
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700');
+@import url('https://fonts.googleapis.com/css?family=Eczar:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+$dark-purple: #390082;
+$work-purple: #683ad4;
+$about-purple: #69228a;
+$label-size: 8vh; 
+
+html{
+  font-size: 10px;
+}
+
+*, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+@media (min-width: 600px){
+	#headerheader{
+		background: red;
+	}
+}
+
+@media (min-width: 1000px){
+	#headerheader{
+		background: blue;
+	}
+}
+
+
+menu{
+	position: fixed;
+	top: 0px;
+	svg{
+		stroke-width: 0.15rem; 
+		stroke: $dark-purple; 
+		fill: white; 
+		&:hover path{
+			fill: #CAFF4D;
+		}
+	}
+
+	.label{
+		display: block; 
+		position: fixed;
+		height: $label-size;
+		margin: 1rem;
+		z-index: 100; 
+		&#laurie-waxman{
+			top: 0px; 
+			left: 3rem;
+		}
+		&#about{
+			width: $label-size;
+			height: auto;
+			top: 12vh; 
+			right: 0px;
+			#hand{
+				    transform-origin: 50% 10%;
+				   -moz-transform: rotate(-90deg);
+			    	 -o-transform: rotate(-90deg);
+			   		-ms-transform: rotate(-90deg);
+				-webkit-transform: rotate(-90deg);
+		         		transform: rotate(-90deg);
+			}
+		}
+		&#work{
+			bottom: 0px;
+			right: $label-size;
+		}
+	}
+}
+
+#canvas{
+	z-index: -1000; 
+	position: fixed;
+}
+
+section{
+	width: 100%; 
+	display: inline-block;
+	position: relative;
+
+}
+
+#headerheader{
+	height: 100vh; 
+	img.bg{
+		position: absolute;
+		width: 100%;
+		height: auto;
+		&#img-bottom{
+			bottom: 0px; 
+		}
+		&#img-top{
+			top: 0px; 
+		}
+	}
+
+}
+
+#workwork{
+	background: rgba(57,0,130,0.8);
+	position: relative;
+	top:100%;
+	display: block;
+	#workworkcontent{
+		position: relative;
+		width: 80%; 
+		left: 5%;
+		top: 100px;
+		img{
+			margin: 10px; 
+		}
+	}
+}
+
+#aboutabout{
+	height: 1200px; 
+	background: rgba(0,0,255,0.8);
+	position: relative;
+	#aboutaboutcontent{
+		p{
+			color: white;
+		}
+	}
+}
+
+.content{
+	z-index: 10;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
