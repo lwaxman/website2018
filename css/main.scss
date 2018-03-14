@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
 @import url('https://fonts.googleapis.com/css?family=Alegreya:700');
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic:700');
@@ -9,10 +9,11 @@
 
 $project-purple: #7a7af9;
 $dark-purple: #390082;
+$dark-purple: #574BA3;
 $about-purple: #a45fc9;
 $label-size: 8vh; 
 $body-color: #220689;
-$highlight: #CAFF4D;
+$highlight: #BFFFFF;
 
 html{
   font-size: 10px;
@@ -25,6 +26,7 @@ html{
 
 h2{
 	font-family: "Averia Sans Libre", sans-serif;
+	text-transform: uppercase;
 	font-size: 5rem;
 	font-weight: 400; 
 	color: white;
@@ -39,7 +41,8 @@ p, blockquote{
 }
 
 blockquote{
-	margin-left: 3rem;
+	padding-left: 3rem;
+	border-left: 2px solid $body-color;
 }
 
 a{
@@ -84,23 +87,51 @@ menu{
 			top: 0px; 
 		}
 		&#about-button{
-			right: 8vw;
+			right: 10vw;
 			bottom: 0px;
 		}
 		&#work-button{
 			width: 8vw;
 			height: auto;
-			top: 8vw; 
+			top: 11vw; 
 			right: 0%;
 		}
 	}
-}
-
-menu.projectmenu{
-	svg.label path, 
-	svg.label line{
-		stroke: #5a5af8; 
-		fill: #9a9afa; 
+	.fade{
+		path, line{
+			stroke: #5a5af8; 
+			fill: #9a9afa; 
+		}
+		&#work-button{
+			#hand path,
+			#hand line{
+				transform-origin: 50% 10%;
+				-webkit-transform: rotate(225deg);
+				-moz-transform: rotate(225deg);
+				transform: rotate(225deg);
+				
+			}
+		}
+		&#about-button{
+			#hand path,
+			#hand line{
+				transform-origin: 90% 48%;
+				-webkit-transform: rotate(225deg);
+				-moz-transform: rotate(225deg);
+				transform: rotate(225deg);
+				
+			}
+		}
+	}
+	#close-button{
+		right: 0px;
+	}
+	#next{
+		right: 0px;
+		bottom: 0px;
+	}
+	#previous{
+		bottom: 0px;
 	}
 }
 
@@ -172,6 +203,7 @@ section{
 
 #work{
 	background: rgba(57,0,130,0.8);
+	background: rgba(90,90,248,0.85);
 	position: relative;
 	display: block;
 	#workcontent{
@@ -212,8 +244,12 @@ section{
 		width: 75%; 
 		left: 10rem;
 		padding-top: 20.5rem;
-		padding-bottom: 10rem;
-		img{
+		padding-bottom: 20rem;
+		div.img-group{
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+		}
+		img, video{
 			width: 100%;
 			margin-top: -4px;
 		}
@@ -283,7 +319,7 @@ section{
 			height: 7vh;
 			&#work-button{
 				width: 7vh;
-				top: 7vh; 
+				top: 10vh; 
 			}
 			&#about-button{
 				right: 7vh;
@@ -296,13 +332,23 @@ section{
 			left: 40%; 
 			top: 20%; 
 		} 
-		img{
+		img{			
 			width: 20%;
 		}
 	}
 	#work{
 		#workcontent img{
 			width: 30%; 
+		}
+	}
+	#project{
+		#projectcontent{
+			.small{
+				width: 50%;
+			}
+			video{
+				width: 100%; 
+			}
 		}
 	}
 }

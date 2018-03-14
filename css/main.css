@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700");
 @import url("https://fonts.googleapis.com/css?family=Alegreya:700");
 @import url("https://fonts.googleapis.com/css?family=Gentium+Basic:700");
@@ -15,6 +15,7 @@ html {
 
 h2 {
   font-family: "Averia Sans Libre", sans-serif;
+  text-transform: uppercase;
   font-size: 5rem;
   font-weight: 400;
   color: white;
@@ -27,7 +28,8 @@ p, blockquote {
   margin-bottom: 3rem; }
 
 blockquote {
-  margin-left: 3rem; }
+  padding-left: 3rem;
+  border-left: 2px solid #220689; }
 
 a {
   font-family: "Averia Serif Libre", sans-serif;
@@ -39,7 +41,7 @@ a {
   a:visited {
     color: #220689; }
   a:hover {
-    color: #CAFF4D; }
+    color: #BFFFFF; }
 
 #canvas {
   z-index: -1000;
@@ -51,11 +53,11 @@ menu {
   top: 0px; }
   menu svg {
     stroke-width: 0.15rem;
-    stroke: #390082;
+    stroke: #574BA3;
     fill: white; }
     menu svg:hover path,
     menu svg svg line {
-      fill: #CAFF4D; }
+      fill: #BFFFFF; }
   menu .label {
     position: fixed;
     height: 8vw;
@@ -64,18 +66,35 @@ menu {
     menu .label#home-button {
       top: 0px; }
     menu .label#about-button {
-      right: 8vw;
+      right: 10vw;
       bottom: 0px; }
     menu .label#work-button {
       width: 8vw;
       height: auto;
-      top: 8vw;
+      top: 11vw;
       right: 0%; }
-
-menu.projectmenu svg.label path,
-menu.projectmenu svg.label line {
-  stroke: #5a5af8;
-  fill: #9a9afa; }
+  menu .fade path, menu .fade line {
+    stroke: #5a5af8;
+    fill: #9a9afa; }
+  menu .fade#work-button #hand path,
+  menu .fade#work-button #hand line {
+    transform-origin: 50% 10%;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    transform: rotate(225deg); }
+  menu .fade#about-button #hand path,
+  menu .fade#about-button #hand line {
+    transform-origin: 90% 48%;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    transform: rotate(225deg); }
+  menu #close-button {
+    right: 0px; }
+  menu #next {
+    right: 0px;
+    bottom: 0px; }
+  menu #previous {
+    bottom: 0px; }
 
 section {
   width: 100%;
@@ -131,6 +150,7 @@ section {
 
 #work {
   background: rgba(57, 0, 130, 0.8);
+  background: rgba(90, 90, 248, 0.85);
   position: relative;
   display: block; }
   #work #workcontent {
@@ -165,8 +185,11 @@ section {
     width: 75%;
     left: 10rem;
     padding-top: 20.5rem;
-    padding-bottom: 10rem; }
-    #project #projectcontent img {
+    padding-bottom: 20rem; }
+    #project #projectcontent div.img-group {
+      margin-top: 5rem;
+      margin-bottom: 5rem; }
+    #project #projectcontent img, #project #projectcontent video {
       width: 100%;
       margin-top: -4px; }
 
@@ -219,7 +242,7 @@ section {
     height: 7vh; }
     menu .label#work-button {
       width: 7vh;
-      top: 7vh; }
+      top: 10vh; }
     menu .label#about-button {
       right: 7vh; }
 
@@ -231,6 +254,11 @@ section {
     width: 20%; }
 
   #work #workcontent img {
-    width: 30%; } }
+    width: 30%; }
+
+  #project #projectcontent .small {
+    width: 50%; }
+  #project #projectcontent video {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
