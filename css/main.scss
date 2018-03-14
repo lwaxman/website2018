@@ -28,7 +28,8 @@ html{
 h2{
 	font-family: "Averia Sans Libre", sans-serif;
 	text-transform: uppercase;
-	font-size: 5rem;
+	font-size: 6rem;
+	line-height: 5.6rem;
 	font-weight: 400; 
 	text-stroke: 1px $dark-purple;
 	-webkit-text-stroke: 1px $dark-purple;
@@ -52,7 +53,7 @@ blockquote{
 a{
 	font-family: "Averia Serif Libre", sans-serif;
 	font-weight: 700;
-	// font-size: 3.8rem;
+	font-size: 4rem;
 	letter-spacing: -0.08rem;
 	text-decoration: none;
 	color: $body-color;
@@ -253,7 +254,7 @@ section{
 		position: relative;
 		width: 75%; 
 		top: 20.5rem; 
-		left: 10rem;
+		left: 5%;
 	}
 	img{
 		position: absolute;
@@ -269,7 +270,7 @@ section{
 	#projectcontent{
 		position: relative;
 		width: 75%; 
-		left: 10rem;
+		left: 5%;
 		padding-top: 20.5rem;
 		padding-bottom: 20rem;
 		div.img-group{
