@@ -18,11 +18,14 @@ h2 {
   text-transform: uppercase;
   font-size: 5rem;
   font-weight: 400;
+  text-stroke: 1px #292b87;
+  -webkit-text-stroke: 1px #292b87;
+  -moz-text-stroke: 1px #292b87;
   color: white;
   margin-bottom: 3rem; }
 
 p, blockquote {
-  font-family: serif;
+  font-family: "Georgia", serif;
   color: #220689;
   font-size: 4rem;
   margin-bottom: 3rem; }
@@ -34,7 +37,6 @@ blockquote {
 a {
   font-family: "Averia Serif Libre", sans-serif;
   font-weight: 700;
-  font-size: 3.8rem;
   letter-spacing: -0.08rem;
   text-decoration: none;
   color: #220689; }
@@ -53,7 +55,7 @@ menu {
   top: 0px; }
   menu svg {
     stroke-width: 0.18rem;
-    stroke: #574BA3;
+    stroke: #292b87;
     fill: white; }
     menu svg:hover path,
     menu svg svg line {
@@ -154,13 +156,33 @@ section {
   position: relative;
   display: block; }
   #work #workcontent {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 75%;
-    left: 10rem;
+    left: 5%;
     padding-top: 20.5rem;
-    padding-bottom: 10rem; }
-    #work #workcontent img {
-      width: 100%; }
+    padding-bottom: 10rem;
+    position: relative; }
+    #work #workcontent a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75vw; }
+      #work #workcontent a img {
+        opacity: 0.6;
+        width: 100%;
+        height: auto; }
+      #work #workcontent a div.overlay {
+        display: block;
+        position: absolute;
+        width: 100%; }
+        #work #workcontent a div.overlay h2 {
+          text-align: center;
+          font-size: 6rem;
+          text-stroke: 1px #292b87;
+          -webkit-text-stroke: 1px #292b87;
+          -moz-text-stroke: 1px #292b87;
+          line-height: 5rem; }
 
 #about {
   background: rgba(164, 95, 201, 0.85);
@@ -210,7 +232,7 @@ section {
   #header img.plant {
     position: absolute; }
     #header img.plant#spider {
-      width: 25%;
+      width: 30%;
       top: 0px;
       left: 5%; }
     #header img.plant#big-leaf {
@@ -222,8 +244,8 @@ section {
       left: 12%;
       bottom: 2vw; }
     #header img.plant#ficus {
-      width: 25%;
-      right: 22%;
+      width: 32%;
+      right: 16%;
       bottom: 10vw; }
     #header img.plant#blue2 {
       width: 22%;
@@ -253,19 +275,76 @@ section {
   #about img {
     width: 20%; }
 
-  #work #workcontent img {
-    width: 30%; }
-    #work #workcontent img:hover {
-      border-radius: 50%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      border: 0.2rem solid #574BA3;
-      background: #BFFFFF; }
+  #work #workcontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start; }
+    #work #workcontent a {
+      width: 50%;
+      height: auto; }
+      #work #workcontent a img {
+        opacity: 1; }
+      #work #workcontent a div.overlay {
+        display: none;
+        width: 50%; }
+      #work #workcontent a:hover img {
+        opacity: 0.3; }
+      #work #workcontent a:hover div.overlay {
+        display: block; }
 
   #project #projectcontent .small {
     width: 50%; }
   #project #projectcontent video {
     width: 100%; } }
+@media (min-width: 1200px) and (orientation: landscape) {
+  #header .bg img.plant {
+    position: absolute; }
+    #header .bg img.plant#spider {
+      width: 25%;
+      top: 0px;
+      left: 5%; }
+    #header .bg img.plant#big-leaf {
+      width: 28%;
+      left: 2%;
+      bottom: 7vw; }
+    #header .bg img.plant#blue1 {
+      width: 25%;
+      left: 12%;
+      bottom: 2vw; }
+    #header .bg img.plant#ficus {
+      width: 25%;
+      right: 22%;
+      bottom: 10vw; }
+    #header .bg img.plant#blue2 {
+      width: 22%;
+      right: 2%;
+      bottom: 8vw; }
+    #header .bg img.plant#snake {
+      width: 12%;
+      right: 15%;
+      bottom: 9vw; }
+    #header .bg img.plant#veeg {
+      width: 10%;
+      right: 12%;
+      bottom: 8vw; }
+
+  #work #workcontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start; }
+    #work #workcontent a {
+      width: 33%;
+      height: auto; }
+      #work #workcontent a img {
+        opacity: 1; }
+      #work #workcontent a div.overlay {
+        display: none;
+        width: 33%; }
+      #work #workcontent a:hover img {
+        opacity: 0.3; }
+      #work #workcontent a:hover div.overlay {
+        display: block; } }
 
 /*# sourceMappingURL=main.css.map */

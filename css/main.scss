@@ -10,6 +10,7 @@
 $project-purple: #7a7af9;
 $dark-purple: #390082;
 $dark-purple: #574BA3;
+$dark-purple: #292b87;
 $about-purple: #a45fc9;
 $label-size: 8vh; 
 $body-color: #220689;
@@ -29,12 +30,15 @@ h2{
 	text-transform: uppercase;
 	font-size: 5rem;
 	font-weight: 400; 
+	text-stroke: 1px $dark-purple;
+	-webkit-text-stroke: 1px $dark-purple;
+	-moz-text-stroke: 1px $dark-purple;
 	color: white;
 	margin-bottom: 3rem;
 }
 
 p, blockquote{
-	font-family: serif;
+	font-family: "Georgia", serif;
 	color: $body-color;
 	font-size: 4rem;
 	margin-bottom: 3rem;
@@ -48,7 +52,7 @@ blockquote{
 a{
 	font-family: "Averia Serif Libre", sans-serif;
 	font-weight: 700;
-	font-size: 3.8rem;
+	// font-size: 3.8rem;
 	letter-spacing: -0.08rem;
 	text-decoration: none;
 	color: $body-color;
@@ -207,16 +211,37 @@ section{
 	position: relative;
 	display: block;
 	#workcontent{
-		position: relative;
+		display: flex;
+		flex-direction: column;
 		width: 75%; 
-		left: 10rem;
+		left: 5%;
 		padding-top: 20.5rem;
 		padding-bottom: 10rem;
-		img{
-			width: 100%;
-
+		position: relative;
+		a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 75vw;
+			img{
+				opacity: 0.6;
+				width: 100%;
+				height: auto;
+			}
+			div.overlay{
+				display: block;
+				position: absolute;
+				width: 100%;
+				h2{
+					text-align: center;
+					font-size: 6rem;
+					text-stroke: 1px $dark-purple;
+					-webkit-text-stroke: 1px $dark-purple;
+					-moz-text-stroke: 1px $dark-purple;
+					line-height: 5rem;
+				}
+			}
 		}
-
 	}
 }
 
@@ -280,7 +305,7 @@ section{
 		img.plant{
 			position: absolute;
 			&#spider{
-				width: 25%;
+				width: 30%;
 				top: 0px; 
 				left: 5%;
 			}
@@ -295,8 +320,8 @@ section{
 				bottom: 2vw;	
 			}
 			&#ficus{
-				width: 25%;
-				right: 22%; 
+				width: 32%;
+				right: 16%; 
 				bottom: 10vw; 
 			}
 			&#blue2{
@@ -339,16 +364,31 @@ section{
 		}
 	}
 	#work{
-		#workcontent img{
-			width: 30%; 
-			&:hover{
-				border-radius: 50%;
-				box-sizing: border-box;
-			    -moz-box-sizing: border-box;
-			    -webkit-box-sizing: border-box;
-				border: 0.2rem solid $dark-purple;
-				background: $highlight;
+		#workcontent{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: flex-start;
+			a{
+				width: 50%;
+				height: auto;
+				img{
+					opacity: 1;
+				}
+				div.overlay{
+					display: none;
+					width: 50%;
+				}
+				&:hover{
+					img{
+						opacity: 0.3;
+					}
+					div.overlay{
+						display: block;
+					}
+				}
 			}
+
 		}
 	}
 	#project{
@@ -361,5 +401,79 @@ section{
 			}
 		}
 	}
+}
+
+@media (min-width: 1200px) and (orientation: landscape){
+	#header{
+		.bg{
+			img.plant{
+				position: absolute;
+				&#spider{
+					width: 25%;
+					top: 0px; 
+					left: 5%;
+				}
+				&#big-leaf{
+					width: 28%;
+					left: 2%; 
+					bottom: 7vw;
+				}
+				&#blue1{
+					width: 25%;
+					left: 12%; 
+					bottom: 2vw;	
+				}
+				&#ficus{
+					width: 25%;
+					right: 22%; 
+					bottom: 10vw; 
+				}
+				&#blue2{
+					width: 22%;
+					right: 2%; 
+					bottom: 8vw;	
+				}
+				&#snake{
+					width: 12%;
+					right: 15%; 
+					bottom: 9vw; 
+				}
+				&#veeg{
+					width: 10%;
+					right: 12%; 
+					bottom: 8vw;
+				}
+			}
+		}
+	}
+	#work{
+		#workcontent{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: flex-start;
+			a{
+				width: 33%;
+				height: auto;
+				img{
+					opacity: 1;
+				}
+				div.overlay{
+					display: none;
+					width: 33%;
+				}
+				&:hover{
+					img{
+						opacity: 0.3;
+					}
+					div.overlay{
+						display: block;
+					}
+				}
+			}
+
+		}
+	}
+
 }
 
