@@ -13,12 +13,16 @@ html {
   margin: 0px;
   padding: 0px; }
 
-@media (min-width: 600px) {
-  #headerheader {
-    background: red; } }
-@media (min-width: 1000px) {
-  #headerheader {
-    background: blue; } }
+a {
+  text-decoration: none;
+  font-style: italic; }
+  a:visited {
+    color: #220689; }
+
+#canvas {
+  z-index: -1000;
+  position: fixed; }
+
 menu {
   position: fixed;
   top: 0px; }
@@ -29,72 +33,106 @@ menu {
     menu svg:hover path {
       fill: #CAFF4D; }
   menu .label {
-    display: block;
     position: fixed;
-    height: 8vh;
-    margin: 1rem;
+    height: 8vw;
+    margin: 1.5rem;
     z-index: 100; }
-    menu .label#laurie-waxman {
-      top: 0px;
-      left: 3rem; }
-    menu .label#about {
-      width: 8vh;
+    menu .label#home-button {
+      top: 0px; }
+    menu .label#about-button {
+      right: 8vw;
+      bottom: 0px; }
+    menu .label#work-button {
+      width: 8vw;
       height: auto;
-      top: 12vh;
-      right: 0px; }
-      menu .label#about #hand {
-        transform-origin: 50% 10%;
-        -moz-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg); }
-    menu .label#work {
-      bottom: 0px;
-      right: 8vh; }
-
-#canvas {
-  z-index: -1000;
-  position: fixed; }
+      top: 8vw;
+      right: 0%; }
 
 section {
   width: 100%;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  top: -3px; }
 
-#headerheader {
+#header {
   height: 100vh; }
-  #headerheader img.bg {
+  #header .bg {
     position: absolute;
     width: 100%;
-    height: auto; }
-    #headerheader img.bg#img-bottom {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
+    #header .bg#img-bottom {
       bottom: 0px; }
-    #headerheader img.bg#img-top {
+    #header .bg#img-top {
       top: 0px; }
 
-#workwork {
+#work {
   background: rgba(57, 0, 130, 0.8);
   position: relative;
-  top: 100%;
   display: block; }
-  #workwork #workworkcontent {
+  #work #workcontent {
     position: relative;
     width: 80%;
     left: 5%;
-    top: 100px; }
-    #workwork #workworkcontent img {
-      margin: 10px; }
+    padding-top: 10rem;
+    padding-bottom: 10rem; }
+    #work #workcontent img {
+      width: 100%; }
 
-#aboutabout {
-  height: 1200px;
-  background: rgba(0, 0, 255, 0.8);
-  position: relative; }
-  #aboutabout #aboutaboutcontent p {
-    color: white; }
+#about {
+  background: rgba(164, 95, 201, 0.85);
+  position: relative;
+  height: 100vh; }
+  #about #aboutcontent {
+    position: relative;
+    width: 75%;
+    top: 15%;
+    left: 10%; }
+    #about #aboutcontent p {
+      font-family: serif;
+      color: #220689;
+      font-size: 4rem;
+      margin-bottom: 3rem; }
+  #about img {
+    position: absolute;
+    bottom: 2rem;
+    left: 5%;
+    width: 30%; }
 
 .content {
   z-index: 10;
   position: relative; }
+
+@media (min-width: 800px) and (orientation: landscape) {
+  #header {
+    background: rgba(255, 255, 0, 0.8); }
+    #header .bg#img-top {
+      content: url(../assets/d-squiggle-top.png);
+      width: 60%;
+      right: 0px; }
+    #header .bg#img-bottom {
+      width: 100%;
+      content: url(../assets/d-squiggle-bottom.png); }
+
+  menu .label {
+    height: 8vh; }
+    menu .label#work-button {
+      width: 8vh;
+      top: 8vh; }
+    menu .label#about-button {
+      right: 8vh; }
+
+  #about #aboutcontent {
+    width: 45%;
+    left: 40%;
+    top: 20%; }
+    #about #aboutcontent p {
+      font-size: 2.4rem; }
+  #about img {
+    width: 20%; }
+
+  #work #workcontent img {
+    width: 30%; } }
 
 /*# sourceMappingURL=main.css.map */

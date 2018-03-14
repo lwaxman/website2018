@@ -7,10 +7,11 @@
 @import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
+$project-purple: #7a7af9;
 $dark-purple: #390082;
-$work-purple: #683ad4;
-$about-purple: #69228a;
+$about-purple: #a45fc9;
 $label-size: 8vh; 
+$body-color: #220689;
 
 html{
   font-size: 10px;
@@ -21,18 +22,18 @@ html{
 	padding: 0px;
 }
 
-@media (min-width: 600px){
-	#headerheader{
-		background: red;
+a{
+	text-decoration: none;
+	font-style: italic;
+	&:visited{
+		color: $body-color;
 	}
 }
 
-@media (min-width: 1000px){
-	#headerheader{
-		background: blue;
-	}
+#canvas{
+	z-index: -1000; 
+	position: fixed;
 }
-
 
 menu{
 	position: fixed;
@@ -45,90 +46,95 @@ menu{
 			fill: #CAFF4D;
 		}
 	}
-
 	.label{
-		display: block; 
 		position: fixed;
-		height: $label-size;
-		margin: 1rem;
+		height: 8vw;
+		margin: 1.5rem;
 		z-index: 100; 
-		&#laurie-waxman{
+		&#home-button{
 			top: 0px; 
-			left: 3rem;
 		}
-		&#about{
-			width: $label-size;
-			height: auto;
-			top: 12vh; 
-			right: 0px;
-			#hand{
-				    transform-origin: 50% 10%;
-				   -moz-transform: rotate(-90deg);
-			    	 -o-transform: rotate(-90deg);
-			   		-ms-transform: rotate(-90deg);
-				-webkit-transform: rotate(-90deg);
-		         		transform: rotate(-90deg);
-			}
-		}
-		&#work{
+		&#about-button{
+			right: 8vw;
 			bottom: 0px;
-			right: $label-size;
+		}
+		&#work-button{
+			width: 8vw;
+			height: auto;
+			top: 8vw; 
+			right: 0%;
 		}
 	}
 }
 
-#canvas{
-	z-index: -1000; 
-	position: fixed;
-}
 
 section{
 	width: 100%; 
 	display: inline-block;
 	position: relative;
+	top: -3px;
+
 
 }
 
-#headerheader{
+#header{
 	height: 100vh; 
-	img.bg{
+	.bg{
 		position: absolute;
 		width: 100%;
 		height: auto;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
 		&#img-bottom{
+			// background-image: url(../assets/m-squiggle-bottom.png);
+			// background-position: bottom;
 			bottom: 0px; 
 		}
 		&#img-top{
+			// background-image: url(../assets/m-squiggle-top.png);
 			top: 0px; 
 		}
 	}
 
 }
 
-#workwork{
+#work{
 	background: rgba(57,0,130,0.8);
 	position: relative;
-	top:100%;
 	display: block;
-	#workworkcontent{
+	#workcontent{
 		position: relative;
 		width: 80%; 
 		left: 5%;
-		top: 100px;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
 		img{
-			margin: 10px; 
+			width: 100%;
 		}
 	}
 }
 
-#aboutabout{
-	height: 1200px; 
-	background: rgba(0,0,255,0.8);
+#about{
+	background: rgba(164,95,201,0.85);
 	position: relative;
-	#aboutaboutcontent{
+	height: 100vh; 
+	#aboutcontent{
+		position: relative;
+		width: 75%; 
+		top: 15%; 
+		left: 10%;
 		p{
-			color: white;
+			font-family: serif;
+			color: $body-color;
+			font-size: 4rem;
+			margin-bottom: 3rem;
 		}
+	}
+	img{
+		position: absolute;
+		bottom: 2rem; 
+		left: 5%; 
+		width: 30%;
 	}
 }
 
@@ -138,10 +144,51 @@ section{
 }
 
 
+@media (min-width: 800px) and (orientation: landscape){
+	#header{
+		background: rgba(255,255,0,0.8);
+		.bg{
+			&#img-top{
+				content:url(../assets/d-squiggle-top.png);
+				width: 60%; 
+				right: 0px;
+			}
+			&#img-bottom{
+				width: 100%; 
+				content:url(../assets/d-squiggle-bottom.png);
+			}
+		}
+	}
+	menu{
+		.label{
+			height: 8vh;
+			&#work-button{
+				width: 8vh;
+				top: 8vh; 
+			}
+			&#about-button{
+				right: 8vh;
+			}
+		}
+	}
+	#about{
+		#aboutcontent{
+			width: 45%; 
+			left: 40%; 
+			top: 20%; 
+			p{
 
-
-
-
-
-
+				font-size: 2.4rem;
+			}
+		} 
+		img{
+			width: 20%;
+		}
+	}
+	#work{
+		#workcontent img{
+			width: 30%; 
+		}
+	}
+}
 

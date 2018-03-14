@@ -21,7 +21,6 @@ var piece;
 var perHeight = 1; 
 var perWidth = 1; 
 
-
 var chooseStart;
 
 var colourOne, colourTwo; 
@@ -43,6 +42,10 @@ function setup(){
 
 	canvas.width = width;
 	canvas.height = height;
+
+	// if(width<=800){
+	// 	cellSize=16; 
+	// }
 
 	cellCount = width/cellSize; 
 	cells = [cellCount];
