@@ -52,7 +52,7 @@ menu {
   position: fixed;
   top: 0px; }
   menu svg {
-    stroke-width: 0.15rem;
+    stroke-width: 0.18rem;
     stroke: #574BA3;
     fill: white; }
     menu svg:hover path,
@@ -117,9 +117,9 @@ section {
     #header img.bg#img-top {
       top: 0px; }
   #header img.plant {
-    z-index: 10;
     position: absolute; }
     #header img.plant#spider {
+      z-index: 10;
       width: 40%;
       top: 0px;
       left: 5%; }
@@ -255,6 +255,13 @@ section {
 
   #work #workcontent img {
     width: 30%; }
+    #work #workcontent img:hover {
+      border-radius: 50%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      border: 0.2rem solid #574BA3;
+      background: #BFFFFF; }
 
   #project #projectcontent .small {
     width: 50%; }
