@@ -94,7 +94,7 @@ menu {
     right: 0px;
     bottom: 0px; }
   menu #previous {
-    bottom: 0px; }
+    bottom: -0.5rem; }
 
 section {
   width: 100%;
