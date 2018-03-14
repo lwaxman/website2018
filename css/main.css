@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700");
 @import url("https://fonts.googleapis.com/css?family=Alegreya:700");
 @import url("https://fonts.googleapis.com/css?family=Gentium+Basic:700");
-@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700");
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Eczar:400,500,600");
 @import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
@@ -14,14 +14,21 @@ html {
   padding: 0px; }
 
 a {
+  font-family: "Averia Serif Libre", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  letter-spacing: -0.08rem;
   text-decoration: none;
-  font-style: italic; }
+  color: #220689; }
   a:visited {
     color: #220689; }
+  a:hover {
+    color: #CAFF4D; }
 
 #canvas {
   z-index: -1000;
-  position: fixed; }
+  position: fixed;
+  height: 101vh; }
 
 menu {
   position: fixed;
@@ -35,7 +42,7 @@ menu {
   menu .label {
     position: fixed;
     height: 8vw;
-    margin: 1.5rem;
+    margin: 2rem;
     z-index: 100; }
     menu .label#home-button {
       top: 0px; }
@@ -52,20 +59,53 @@ section {
   width: 100%;
   display: inline-block;
   position: relative;
-  top: -3px; }
+  margin-top: -3px; }
 
 #header {
-  height: 100vh; }
-  #header .bg {
+  overflow: hidden;
+  height: 101vh; }
+  #header img.bg {
+    z-index: -10;
     position: absolute;
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: 100% auto; }
-    #header .bg#img-bottom {
+    #header img.bg#img-bottom {
       bottom: 0px; }
-    #header .bg#img-top {
+    #header img.bg#img-top {
       top: 0px; }
+  #header img.plant {
+    z-index: 10;
+    position: absolute; }
+    #header img.plant#spider {
+      width: 40%;
+      top: 0px;
+      left: 5%; }
+    #header img.plant#ficus {
+      width: 50%;
+      right: 5%;
+      bottom: 20vw; }
+    #header img.plant#big-leaf {
+      width: 40%;
+      left: -5%;
+      bottom: 12vw; }
+    #header img.plant#blue1 {
+      width: 35%;
+      left: 5%;
+      bottom: 5vw; }
+    #header img.plant#blue2 {
+      width: 35%;
+      right: -5%;
+      bottom: 16vw; }
+    #header img.plant#snake {
+      width: 22%;
+      right: 10%;
+      bottom: 14vw; }
+    #header img.plant#veeg {
+      width: 20%;
+      right: 5%;
+      bottom: 12vw; }
 
 #work {
   background: rgba(57, 0, 130, 0.8);
@@ -75,7 +115,7 @@ section {
     position: relative;
     width: 80%;
     left: 5%;
-    padding-top: 10rem;
+    padding-top: 13.5rem;
     padding-bottom: 10rem; }
     #work #workcontent img {
       width: 100%; }
@@ -105,23 +145,54 @@ section {
   position: relative; }
 
 @media (min-width: 800px) and (orientation: landscape) {
-  #header {
-    background: rgba(255, 255, 0, 0.8); }
-    #header .bg#img-top {
-      content: url(../assets/d-squiggle-top.png);
-      width: 60%;
-      right: 0px; }
-    #header .bg#img-bottom {
-      width: 100%;
-      content: url(../assets/d-squiggle-bottom.png); }
+  a {
+    font-size: 2.3rem; }
+
+  #header .bg#img-top {
+    content: url(../assets/d-squiggle-top.png);
+    width: 60%;
+    right: 0px; }
+  #header .bg#img-bottom {
+    width: 100%;
+    content: url(../assets/d-squiggle-bottom.png); }
+  #header img.plant {
+    position: absolute; }
+    #header img.plant#spider {
+      width: 25%;
+      top: 0px;
+      left: 5%; }
+    #header img.plant#big-leaf {
+      width: 28%;
+      left: 2%;
+      bottom: 7vw; }
+    #header img.plant#blue1 {
+      width: 25%;
+      left: 12%;
+      bottom: 2vw; }
+    #header img.plant#ficus {
+      width: 25%;
+      right: 22%;
+      bottom: 10vw; }
+    #header img.plant#blue2 {
+      width: 22%;
+      right: 2%;
+      bottom: 8vw; }
+    #header img.plant#snake {
+      width: 12%;
+      right: 15%;
+      bottom: 9vw; }
+    #header img.plant#veeg {
+      width: 12%;
+      right: 10%;
+      bottom: 8vw; }
 
   menu .label {
-    height: 8vh; }
+    height: 7vh; }
     menu .label#work-button {
-      width: 8vh;
-      top: 8vh; }
+      width: 7vh;
+      top: 7vh; }
     menu .label#about-button {
-      right: 8vh; }
+      right: 7vh; }
 
   #about #aboutcontent {
     width: 45%;

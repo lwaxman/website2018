@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
 @import url('https://fonts.googleapis.com/css?family=Alegreya:700');
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic:700');
-@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700');
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Eczar:400,500,600');
 @import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
@@ -12,6 +12,7 @@ $dark-purple: #390082;
 $about-purple: #a45fc9;
 $label-size: 8vh; 
 $body-color: #220689;
+$highlight: #CAFF4D;
 
 html{
   font-size: 10px;
@@ -23,16 +24,25 @@ html{
 }
 
 a{
+	font-family: "Averia Serif Libre", sans-serif;
+	font-weight: 700;
+	font-size: 3.8rem;
+	letter-spacing: -0.08rem;
 	text-decoration: none;
-	font-style: italic;
+	color: $body-color;
 	&:visited{
 		color: $body-color;
+	}
+	&:hover{
+		color: $highlight;
+		// text-shadow: 2px 2px 0px #220689;
 	}
 }
 
 #canvas{
 	z-index: -1000; 
 	position: fixed;
+	height: 101vh;
 }
 
 menu{
@@ -43,13 +53,13 @@ menu{
 		stroke: $dark-purple; 
 		fill: white; 
 		&:hover path{
-			fill: #CAFF4D;
+			fill: $highlight;
 		}
 	}
 	.label{
 		position: fixed;
 		height: 8vw;
-		margin: 1.5rem;
+		margin: 2rem;
 		z-index: 100; 
 		&#home-button{
 			top: 0px; 
@@ -72,30 +82,66 @@ section{
 	width: 100%; 
 	display: inline-block;
 	position: relative;
-	top: -3px;
-
+	margin-top: -3px;
 
 }
 
 #header{
-	height: 100vh; 
-	.bg{
+	overflow: hidden;
+	height: 101vh; 
+	img.bg{
+		z-index: -10;
 		position: absolute;
 		width: 100%;
 		height: auto;
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		&#img-bottom{
-			// background-image: url(../assets/m-squiggle-bottom.png);
-			// background-position: bottom;
 			bottom: 0px; 
 		}
 		&#img-top{
-			// background-image: url(../assets/m-squiggle-top.png);
 			top: 0px; 
 		}
 	}
-
+	img.plant{
+		z-index: 10;
+		position: absolute;
+		&#spider{
+			width: 40%;
+			top: 0px; 
+			left: 5%;
+		}
+		&#ficus{
+			width: 50%;
+			right: 5%; 
+			bottom: 20vw; 
+		}
+		&#big-leaf{
+			width: 40%;
+			left: -5%; 
+			bottom: 12vw;
+		}
+		&#blue1{
+			width: 35%;
+			left: 5%; 
+			bottom: 5vw;	
+		}
+		&#blue2{
+			width: 35%;
+			right: -5%; 
+			bottom: 16vw;	
+		}
+		&#snake{
+			width: 22%;
+			right: 10%; 
+			bottom: 14vw; 
+		}
+		&#veeg{
+			width: 20%;
+			right: 5%; 
+			bottom: 12vw;
+		}
+	}
 }
 
 #work{
@@ -106,7 +152,7 @@ section{
 		position: relative;
 		width: 80%; 
 		left: 5%;
-		padding-top: 10rem;
+		padding-top: 13.5rem;
 		padding-bottom: 10rem;
 		img{
 			width: 100%;
@@ -145,8 +191,10 @@ section{
 
 
 @media (min-width: 800px) and (orientation: landscape){
+	a{
+		font-size: 2.3rem;
+	}
 	#header{
-		background: rgba(255,255,0,0.8);
 		.bg{
 			&#img-top{
 				content:url(../assets/d-squiggle-top.png);
@@ -158,16 +206,54 @@ section{
 				content:url(../assets/d-squiggle-bottom.png);
 			}
 		}
+		img.plant{
+			position: absolute;
+			&#spider{
+				width: 25%;
+				top: 0px; 
+				left: 5%;
+			}
+			&#big-leaf{
+				width: 28%;
+				left: 2%; 
+				bottom: 7vw;
+			}
+			&#blue1{
+				width: 25%;
+				left: 12%; 
+				bottom: 2vw;	
+			}
+			&#ficus{
+				width: 25%;
+				right: 22%; 
+				bottom: 10vw; 
+			}
+			&#blue2{
+				width: 22%;
+				right: 2%; 
+				bottom: 8vw;	
+			}
+			&#snake{
+				width: 12%;
+				right: 15%; 
+				bottom: 9vw; 
+			}
+			&#veeg{
+				width: 12%;
+				right: 10%; 
+				bottom: 8vw;
+			}
+		}
 	}
 	menu{
 		.label{
-			height: 8vh;
+			height: 7vh;
 			&#work-button{
-				width: 8vh;
-				top: 8vh; 
+				width: 7vh;
+				top: 7vh; 
 			}
 			&#about-button{
-				right: 8vh;
+				right: 7vh;
 			}
 		}
 	}
