@@ -13,6 +13,22 @@ html {
   margin: 0px;
   padding: 0px; }
 
+h2 {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 3rem; }
+
+p, blockquote {
+  font-family: serif;
+  color: #220689;
+  font-size: 4rem;
+  margin-bottom: 3rem; }
+
+blockquote {
+  margin-left: 3rem; }
+
 a {
   font-family: "Averia Serif Libre", sans-serif;
   font-weight: 700;
@@ -37,12 +53,13 @@ menu {
     stroke-width: 0.15rem;
     stroke: #390082;
     fill: white; }
-    menu svg:hover path {
+    menu svg:hover path,
+    menu svg svg line {
       fill: #CAFF4D; }
   menu .label {
     position: fixed;
     height: 8vw;
-    margin: 2rem;
+    margin: 3rem;
     z-index: 100; }
     menu .label#home-button {
       top: 0px; }
@@ -54,6 +71,11 @@ menu {
       height: auto;
       top: 8vw;
       right: 0%; }
+
+menu.projectmenu svg.label path,
+menu.projectmenu svg.label line {
+  stroke: #5a5af8;
+  fill: #9a9afa; }
 
 section {
   width: 100%;
@@ -113,9 +135,9 @@ section {
   display: block; }
   #work #workcontent {
     position: relative;
-    width: 80%;
-    left: 5%;
-    padding-top: 13.5rem;
+    width: 75%;
+    left: 10rem;
+    padding-top: 20.5rem;
     padding-bottom: 10rem; }
     #work #workcontent img {
       width: 100%; }
@@ -127,24 +149,31 @@ section {
   #about #aboutcontent {
     position: relative;
     width: 75%;
-    top: 15%;
-    left: 10%; }
-    #about #aboutcontent p {
-      font-family: serif;
-      color: #220689;
-      font-size: 4rem;
-      margin-bottom: 3rem; }
+    top: 20.5rem;
+    left: 10rem; }
   #about img {
     position: absolute;
     bottom: 2rem;
     left: 5%;
     width: 30%; }
 
-.content {
-  z-index: 10;
-  position: relative; }
+#project {
+  pointer-events: unset;
+  background: rgba(122, 122, 249, 0.88); }
+  #project #projectcontent {
+    position: relative;
+    width: 75%;
+    left: 10rem;
+    padding-top: 20.5rem;
+    padding-bottom: 10rem; }
+    #project #projectcontent img {
+      width: 100%;
+      margin-top: -4px; }
 
 @media (min-width: 800px) and (orientation: landscape) {
+  p, blockquote {
+    font-size: 2.4rem; }
+
   a {
     font-size: 2.3rem; }
 
@@ -182,8 +211,8 @@ section {
       right: 15%;
       bottom: 9vw; }
     #header img.plant#veeg {
-      width: 12%;
-      right: 10%;
+      width: 10%;
+      right: 12%;
       bottom: 8vw; }
 
   menu .label {
@@ -198,8 +227,6 @@ section {
     width: 45%;
     left: 40%;
     top: 20%; }
-    #about #aboutcontent p {
-      font-size: 2.4rem; }
   #about img {
     width: 20%; }
 

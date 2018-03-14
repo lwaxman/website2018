@@ -23,6 +23,25 @@ html{
 	padding: 0px;
 }
 
+h2{
+	font-family: "Averia Sans Libre", sans-serif;
+	font-size: 5rem;
+	font-weight: 400; 
+	color: white;
+	margin-bottom: 3rem;
+}
+
+p, blockquote{
+	font-family: serif;
+	color: $body-color;
+	font-size: 4rem;
+	margin-bottom: 3rem;
+}
+
+blockquote{
+	margin-left: 3rem;
+}
+
 a{
 	font-family: "Averia Serif Libre", sans-serif;
 	font-weight: 700;
@@ -35,7 +54,6 @@ a{
 	}
 	&:hover{
 		color: $highlight;
-		// text-shadow: 2px 2px 0px #220689;
 	}
 }
 
@@ -52,14 +70,15 @@ menu{
 		stroke-width: 0.15rem; 
 		stroke: $dark-purple; 
 		fill: white; 
-		&:hover path{
+		&:hover path, 
+		svg line{
 			fill: $highlight;
 		}
 	}
 	.label{
 		position: fixed;
 		height: 8vw;
-		margin: 2rem;
+		margin: 3rem;
 		z-index: 100; 
 		&#home-button{
 			top: 0px; 
@@ -77,6 +96,13 @@ menu{
 	}
 }
 
+menu.projectmenu{
+	svg.label path, 
+	svg.label line{
+		stroke: #5a5af8; 
+		fill: #9a9afa; 
+	}
+}
 
 section{
 	width: 100%; 
@@ -150,9 +176,9 @@ section{
 	display: block;
 	#workcontent{
 		position: relative;
-		width: 80%; 
-		left: 5%;
-		padding-top: 13.5rem;
+		width: 75%; 
+		left: 10rem;
+		padding-top: 20.5rem;
 		padding-bottom: 10rem;
 		img{
 			width: 100%;
@@ -167,14 +193,8 @@ section{
 	#aboutcontent{
 		position: relative;
 		width: 75%; 
-		top: 15%; 
-		left: 10%;
-		p{
-			font-family: serif;
-			color: $body-color;
-			font-size: 4rem;
-			margin-bottom: 3rem;
-		}
+		top: 20.5rem; 
+		left: 10rem;
 	}
 	img{
 		position: absolute;
@@ -184,13 +204,26 @@ section{
 	}
 }
 
-.content{
-	z-index: 10;
-	position: relative;
+#project{
+	pointer-events: unset;
+	background: rgba(122,122,249,0.88);
+	#projectcontent{
+		position: relative;
+		width: 75%; 
+		left: 10rem;
+		padding-top: 20.5rem;
+		padding-bottom: 10rem;
+		img{
+			width: 100%;
+			margin-top: -4px;
+		}
+	}
 }
 
-
 @media (min-width: 800px) and (orientation: landscape){
+	p, blockquote{
+		font-size: 2.4rem;
+	}
 	a{
 		font-size: 2.3rem;
 	}
@@ -239,8 +272,8 @@ section{
 				bottom: 9vw; 
 			}
 			&#veeg{
-				width: 12%;
-				right: 10%; 
+				width: 10%;
+				right: 12%; 
 				bottom: 8vw;
 			}
 		}
@@ -262,10 +295,6 @@ section{
 			width: 45%; 
 			left: 40%; 
 			top: 20%; 
-			p{
-
-				font-size: 2.4rem;
-			}
 		} 
 		img{
 			width: 20%;
