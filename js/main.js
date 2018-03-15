@@ -1,35 +1,36 @@
 
-$( document ).ready(function() {
+$(document).ready(function(){
 
-	$('#home-button').on('click', function (event) {
+	// animate scroll to sections
+
+	$('#home-button').on('click', function(event){
 	    event.preventDefault();
 	    $('html, body').animate({
 	        scrollTop: $('#header').offset().top
 	    }, 500);
 	});
 
-	$('#work-button').on('click', function (event) {
+	$('#work-button').on('click', function(event){
 	    event.preventDefault();
 	    $('html, body').animate({
 	        scrollTop: $('#work').offset().top
 	    }, 500);
 	});
 
-	$('#about-button').on('click', function (event) {
+	$('#about-button').on('click', function(event){
 	    event.preventDefault();
 	    $('html, body').animate({
 	        scrollTop: $('#about').offset().top
 	    }, 500);
 	});
 
-	$(window).on('resize scroll', function() {
+	//hand rotation functions trigger on scroll
+	window.onscroll = function() {
 		var workContainer = document.getElementById('work');
 		var aboutContainer = document.getElementById('about');
 		rotateWorkHand(workContainer);
 		rotateAboutHand(aboutContainer);
-
-	}); 
-
+	}
 
 	function rotateWorkHand(element) {
 	    var e = element.getBoundingClientRect();
@@ -65,6 +66,8 @@ $( document ).ready(function() {
 		}
 	}
 
-
 });
+
+
+
 
