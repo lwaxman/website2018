@@ -59,8 +59,7 @@ menu {
     stroke-width: 0.18rem;
     stroke: #292b87;
     fill: white; }
-    menu svg:hover path,
-    menu svg svg line {
+    menu svg:hover path, menu svg line {
       fill: #BFFFFF; }
   menu .label {
     position: fixed;
@@ -72,23 +71,37 @@ menu {
     menu .label#about-button {
       right: 10vw;
       bottom: 0px; }
+      menu .label#about-button #hand path,
+      menu .label#about-button #hand line {
+        transform-origin: 89% 48%;
+        -webkit-transition: transform 0.5s;
+        -moz-transition: transform 0.5s;
+        -ms-transition: transform 0.5s;
+        transition: transform 0.5s; }
     menu .label#work-button {
       width: 8vw;
       height: auto;
       top: 11vw;
       right: 0%; }
+      menu .label#work-button #hand path,
+      menu .label#work-button #hand line {
+        transform-origin: 47% 11%;
+        -webkit-transition: transform 0.5s;
+        -moz-transition: transform 0.5s;
+        -ms-transition: transform 0.5s;
+        transition: transform 0.5s; }
   menu .fade path, menu .fade line {
     stroke: #5a5af8;
     fill: #9a9afa; }
   menu .fade#work-button #hand path,
   menu .fade#work-button #hand line {
-    transform-origin: 50% 10%;
+    transform-origin: 47% 11%;
     -webkit-transform: rotate(225deg);
     -moz-transform: rotate(225deg);
     transform: rotate(225deg); }
   menu .fade#about-button #hand path,
   menu .fade#about-button #hand line {
-    transform-origin: 90% 48%;
+    transform-origin: 89% 48%;
     -webkit-transform: rotate(225deg);
     -moz-transform: rotate(225deg);
     transform: rotate(225deg); }

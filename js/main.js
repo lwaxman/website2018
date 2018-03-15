@@ -22,37 +22,47 @@ $( document ).ready(function() {
 	    }, 500);
 	});
 
-	$(window).scroll(function(){
-		$('.text').each(function(){
-			if(isVisible($(this))){
-				$(this).children('span').text('visible');
-			}
-			else{
-				$(this).children('span').text('invisible');
-			}
-		});
+	$(window).on('resize scroll', function() {
+		var workContainer = document.getElementById('work');
+		var aboutContainer = document.getElementById('about');
+		rotateWorkHand(workContainer);
+		rotateAboutHand(aboutContainer);
 
-		// $('.text').each(function(){
-		// 	if(isScrolledIntoView($(this))){
-		// 		$(this).children('span').text('visible');
-		// 	}
-		// 	else{
-		// 		$(this).children('span').text('invisible');
-		// 	}
-		// });
-	});
+	}); 
 
-	function isVisible(elem){
-		var $elem = $(elem);
-		var $window = $(window);
 
-		var docViewTop = $window.scrollTop();
-		var docViewBottom = docViewTop + $window.height();
+	function rotateWorkHand(element) {
+	    var e = element.getBoundingClientRect();
+	    console.log(e.top, e.bottom, window.innerHeight);
 
-		var elemTop = $elem.offset().top;
-		var elemBottom = elemTop + $elem.height();
+	    if(e.bottom < window.innerHeight*0.25){
+	    //POINT UP
+	    	$("#work-button #hand path").css("transform", "rotate(180deg)");
+	    	$("#work-button #hand line").css("transform", "rotate(180deg)");
 
-		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	    }else if(e.top <= 50 && e.bottom >= window.innerHeight*0.75){
+	    //POINT LEFT
+	    	$("#work-button #hand path").css("transform", "rotate(90deg)");
+	    	$("#work-button #hand line").css("transform", "rotate(90deg)");
+	    }else if(e.top > window.innerHeight){
+    	//POINT DOWN
+	    	$("#work-button #hand path").css("transform", "rotate(0deg)");
+	    	$("#work-button #hand line").css("transform", "rotate(0deg)");
+	    }
+
+	}
+
+	function rotateAboutHand(element) {
+	    var e = element.getBoundingClientRect();
+		if(e.top <= window.innerHeight*0.75){
+		//POINT LEFT
+			$("#about-button #hand path").css("transform", "rotate(90deg)");
+	    	$("#about-button #hand line").css("transform", "rotate(90deg)");
+		}else{
+		 //POINT DOWN
+			$("#about-button #hand path").css("transform", "rotate(0deg)");
+	    	$("#about-button #hand line").css("transform", "rotate(0deg)");
+		}
 	}
 
 
