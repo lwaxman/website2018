@@ -230,9 +230,10 @@ section {
       width: 100%;
       margin-top: -4px; }
 
-@media (min-width: 800px) and (orientation: landscape) {
+@media (min-width: 800px) {
   p, blockquote {
-    font-size: 2.4rem; }
+    font-size: 2.2rem;
+    line-height: 2.8rem; }
 
   a {
     font-size: 2.3rem; }
@@ -283,13 +284,6 @@ section {
     menu .label#about-button {
       right: 7vh; }
 
-  #about #aboutcontent {
-    width: 45%;
-    left: 40%;
-    top: 20%; }
-  #about img {
-    width: 20%; }
-
   #work #workcontent {
     display: flex;
     flex-wrap: wrap;
@@ -307,6 +301,13 @@ section {
         opacity: 0.3; }
       #work #workcontent a:hover div.overlay {
         display: block; }
+
+  #about #aboutcontent {
+    width: 60%;
+    left: 15%;
+    top: 20%; }
+  #about img {
+    width: 20%; }
 
   #project #projectcontent .small {
     width: 50%; }
@@ -345,6 +346,8 @@ section {
       bottom: 8vw; }
 
   #work #workcontent {
+    max-width: 1200px;
+    left: 10%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -360,7 +363,23 @@ section {
       #work #workcontent a:hover img {
         opacity: 0.3; }
       #work #workcontent a:hover div.overlay {
-        display: block; } }
+        display: block; }
+
+  #about #aboutcontent {
+    width: 45%;
+    left: 40%;
+    top: 20%; }
+  #about img {
+    width: 20%; }
+
+  #project #projectcontent {
+    max-width: 1400px;
+    left: 10%; } }
+@media (min-width: 800px) and (orientation: portrait) {
+  menu .label {
+    height: 8vw; }
+    menu .label#work-button {
+      width: 8vw; } }
 @media (hover: none) {
   #work #workcontent a {
     display: flex;

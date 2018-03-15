@@ -263,7 +263,6 @@ section{
 
 #about{
 	background: rgba(164,95,201,0.85);
-	// background: rgba(208, 143, 243, 0.9);
 
 	position: relative;
 	height: 100vh; 
@@ -302,9 +301,10 @@ section{
 }
 
 
-@media (min-width: 800px) and (orientation: landscape){
+@media (min-width: 800px){
 	p, blockquote{
-		font-size: 2.4rem;
+		font-size: 2.2rem;
+		line-height: 2.8rem;
 	}
 	a{
 		font-size: 2.3rem;
@@ -372,16 +372,6 @@ section{
 			}
 		}
 	}
-	#about{
-		#aboutcontent{
-			width: 45%; 
-			left: 40%; 
-			top: 20%; 
-		} 
-		img{			
-			width: 20%;
-		}
-	}
 	#work{
 		#workcontent{
 			display: flex;
@@ -408,6 +398,16 @@ section{
 				}
 			}
 
+		}
+	}
+	#about{
+		#aboutcontent{
+			width: 60%; 
+			left: 15%; 
+			top: 20%; 
+		} 
+		img{			
+			width: 20%;
 		}
 	}
 	#project{
@@ -467,6 +467,8 @@ section{
 	}
 	#work{
 		#workcontent{
+			max-width: 1200px;
+			left: 10%;
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
@@ -493,9 +495,36 @@ section{
 
 		}
 	}
+	#about{
+		#aboutcontent{
+			width: 45%; 
+			left: 40%; 
+			top: 20%; 
+		} 
+		img{			
+			width: 20%;
+		}
+	}
+	#project{
+		#projectcontent{
+			max-width: 1400px;
+			left: 10%;
+		}
+	}
 
 }
 
+
+@media (min-width: 800px) and (orientation: portrait){
+	menu{
+		.label{
+			height: 8vw;
+			&#work-button{
+				width: 8vw;
+			}
+		}
+	}
+}
 
 @media (hover: none){
 	#work #workcontent{

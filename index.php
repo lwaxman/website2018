@@ -23,103 +23,103 @@
       <section id="work">
         <div id="workcontent">
           <a href="work/01_alphabet.php">
-            <img class="col-1" src="assets/thumbnails/alphabet.png" alt="">
+            <img src="assets/thumbnails/alphabet.png" alt="">
             <div class="overlay">
               <h2>alphabet iterations</h2>
             </div>
           </a>
           <a href="work/02_bindthisbook.php">
-            <img class="col-2" src="assets/thumbnails/bindthisbook.png" alt="">
+            <img src="assets/thumbnails/bindthisbook.png" alt="">
             <div class="overlay">
               <h2>bind this book</h2>
             </div>
           </a>
           <a href="work/03_flandill.php">
-            <img class="col-2" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>flandill</h2>
             </div>
           </a>
           <a href="work/04_airquality.php">
-            <img class="col-1" src="assets/thumbnails/airquality.png" alt="">
+            <img src="assets/thumbnails/airquality.png" alt="">
             <div class="overlay">
               <h2>air quality</h2>
             </div>
           </a>
           <a href="work/05_bfadt.php">
-            <img class="col-1" src="assets/thumbnails/bfadt.png" alt="">
+            <img src="assets/thumbnails/bfadt.png" alt="">
             <div class="overlay">
               <h2>bfadt</h2>
             </div>
           </a>
           <a href="https://chrome.google.com/webstore/detail/automatab-%E2%80%94-a-new-tab-pag/lmhppbimjgjafkdhkpmgolplbgmliedl?hl=en">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>automatab</h2>
             </div>
           </a>
           <a href="work/07_garden.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>garden</h2>
             </div>
           </a>
           <a href="work/08_meindlfigurines.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>meindl figurines</h2>
             </div>
           </a>
           <a href="work/09_ardent.php">
-            <img class="col-2" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>ardent</h2>
             </div>
           </a>
           <a href="work/10_sol-3.php">
-            <img class="col-2" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>sol-3</h2>
             </div>
           </a>
           <a href="work/11_pattern.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>pattern</h2>
             </div>
           </a>
           <a href="work/12_tealights.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>tealights</h2>
             </div>
           </a>
           <a href="work/13_cityscape.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>cityscape</h2>
             </div>
           </a>
           <a href="http://lauriewaxman.com/work/scribbler/">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>scribbler</h2>
             </div>
           </a>
           <a href="work/15_coasttocoast.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>coast to coast</h2>
             </div>
           </a>
           <a href="work/16_calendar.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>calendar</h2>
             </div>
           </a>
           <a href="work/17_misc.php">
-            <img class="col-1" src="assets/thumbnails/flandill-2.png" alt="">
+            <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>misc.</h2>
             </div>
