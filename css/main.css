@@ -348,5 +348,15 @@ section {
         opacity: 0.3; }
       #work #workcontent a:hover div.overlay {
         display: block; } }
+@media (hover: none) {
+  #work #workcontent a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #work #workcontent a img {
+      opacity: 0.6; }
+    #work #workcontent a div.overlay {
+      display: block;
+      position: absolute; } }
 
 /*# sourceMappingURL=main.css.map */
