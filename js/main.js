@@ -34,8 +34,6 @@ $(document).ready(function(){
 
 	function rotateWorkHand(element) {
 	    var e = element.getBoundingClientRect();
-	    console.log(e.top, e.bottom, window.innerHeight);
-
 	    if(e.bottom < window.innerHeight*0.25){
 	    //POINT UP
 	    	$("#work-button #hand path").css("transform", "rotate(180deg)");

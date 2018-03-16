@@ -15,8 +15,8 @@
         <img src="assets/spider.png" alt="spider" class="plant" id="spider">
         <img src="assets/ficus.png" alt="ficus" class="plant" id="ficus">
         <img src="assets/big-leaf.png" alt="big" class="plant" id="big-leaf">
-        <img src="assets/blue.png" alt="blue" class="plant" id="blue1">
-        <img src="assets/blue.png" alt="blue" class="plant" id="blue2">
+        <img src="assets/blue.png" alt="blue" class="plant" id="blue">
+        <img src="assets/green.png" alt="green" class="plant" id="green">
         <img src="assets/snake.png" alt="snake" class="plant" id="snake">
         <img src="assets/veeg.png" alt="veeg" class="plant" id="veeg">
       </section>
@@ -53,73 +53,73 @@
             </div>
           </a>
           <a href="https://chrome.google.com/webstore/detail/automatab-%E2%80%94-a-new-tab-pag/lmhppbimjgjafkdhkpmgolplbgmliedl?hl=en">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/automatab.png" alt="">
             <div class="overlay">
               <h2>automatab</h2>
             </div>
           </a>
           <a href="work/07_garden.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/garden.png" alt="">
             <div class="overlay">
               <h2>garden</h2>
             </div>
           </a>
           <a href="work/08_meindlfigurines.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/meindlfigurines.png" alt="">
             <div class="overlay">
               <h2>meindl figurines</h2>
             </div>
           </a>
           <a href="work/09_ardent.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/ardent.png" alt="">
             <div class="overlay">
               <h2>ardent</h2>
             </div>
           </a>
           <a href="work/10_sol-3.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/sol-3.png" alt="">
             <div class="overlay">
               <h2>sol-3</h2>
             </div>
           </a>
           <a href="work/11_pattern.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/pattern.png" alt="">
             <div class="overlay">
               <h2>pattern</h2>
             </div>
           </a>
           <a href="work/12_tealights.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/tealights.png" alt="">
             <div class="overlay">
               <h2>tealights</h2>
             </div>
           </a>
           <a href="work/13_cityscape.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/cityscape.png" alt="">
             <div class="overlay">
               <h2>cityscape</h2>
             </div>
           </a>
           <a href="http://lauriewaxman.com/work/scribbler/">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/scribbler.png" alt="">
             <div class="overlay">
               <h2>scribbler</h2>
             </div>
           </a>
           <a href="work/15_coasttocoast.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/coasttocoast.png" alt="">
             <div class="overlay">
               <h2>coast to coast</h2>
             </div>
           </a>
           <a href="work/16_calendar.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/calendar.png" alt="">
             <div class="overlay">
-              <h2>calendar</h2>
+              <h2>2016 calendar</h2>
             </div>
           </a>
           <a href="work/17_misc.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/misc.png" alt="">
             <div class="overlay">
               <h2>misc.</h2>
             </div>
