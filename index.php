@@ -22,31 +22,31 @@
       </section>
       <section id="work">
         <div id="workcontent">
-          <a href="work/01_alphabet.php">
+          <a href="work/alphabet.php">
             <img src="assets/thumbnails/alphabet.png" alt="">
             <div class="overlay">
               <h2>alphabet iterations</h2>
             </div>
           </a>
-          <a href="work/02_bindthisbook.php">
+          <a href="work/bindthisbook.php">
             <img src="assets/thumbnails/bindthisbook.png" alt="">
             <div class="overlay">
               <h2>bind this book</h2>
             </div>
           </a>
-          <a href="work/03_flandill.php">
+          <a href="work/flandill.php">
             <img src="assets/thumbnails/flandill.png" alt="">
             <div class="overlay">
               <h2>flandill</h2>
             </div>
           </a>
-          <a href="work/04_airquality.php">
+          <a href="work/airquality.php">
             <img src="assets/thumbnails/airquality.png" alt="">
             <div class="overlay">
               <h2>air quality</h2>
             </div>
           </a>
-          <a href="work/05_bfadt.php">
+          <a href="work/bfadt.php">
             <img src="assets/thumbnails/bfadt.png" alt="">
             <div class="overlay">
               <h2>bfadt</h2>
@@ -58,43 +58,43 @@
               <h2>automatab</h2>
             </div>
           </a>
-          <a href="work/07_garden.php">
+          <a href="work/garden.php">
             <img src="assets/thumbnails/garden.png" alt="">
             <div class="overlay">
               <h2>garden</h2>
             </div>
           </a>
-          <a href="work/08_meindlfigurines.php">
+          <a href="work/meindlfigurines.php">
             <img src="assets/thumbnails/meindlfigurines.png" alt="">
             <div class="overlay">
               <h2>meindl figurines</h2>
             </div>
           </a>
-          <a href="work/09_ardent.php">
+          <a href="work/ardent.php">
             <img src="assets/thumbnails/ardent.png" alt="">
             <div class="overlay">
               <h2>ardent</h2>
             </div>
           </a>
-          <a href="work/10_sol-3.php">
+          <a href="work/sol-3.php">
             <img src="assets/thumbnails/sol-3.png" alt="">
             <div class="overlay">
               <h2>sol-3</h2>
             </div>
           </a>
-          <a href="work/11_pattern.php">
+          <a href="work/pattern.php">
             <img src="assets/thumbnails/pattern.png" alt="">
             <div class="overlay">
               <h2>pattern</h2>
             </div>
           </a>
-          <a href="work/12_tealights.php">
+          <a href="work/tealights.php">
             <img src="assets/thumbnails/tealights.png" alt="">
             <div class="overlay">
               <h2>tealights</h2>
             </div>
           </a>
-          <a href="work/13_cityscape.php">
+          <a href="work/cityscape.php">
             <img src="assets/thumbnails/cityscape.png" alt="">
             <div class="overlay">
               <h2>cityscape</h2>
@@ -106,19 +106,19 @@
               <h2>scribbler</h2>
             </div>
           </a>
-          <a href="work/15_coasttocoast.php">
+          <a href="work/coasttocoast.php">
             <img src="assets/thumbnails/coasttocoast.png" alt="">
             <div class="overlay">
               <h2>coast to coast</h2>
             </div>
           </a>
-          <a href="work/16_calendar.php">
+          <a href="work/calendar.php">
             <img src="assets/thumbnails/calendar.png" alt="">
             <div class="overlay">
               <h2>2016 calendar</h2>
             </div>
           </a>
-          <a href="work/17_misc.php">
+          <a href="work/misc.php">
             <img src="assets/thumbnails/misc.png" alt="">
             <div class="overlay">
               <h2>misc.</h2>
