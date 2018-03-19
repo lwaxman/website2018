@@ -29,7 +29,7 @@
             </div>
           </a>
           <a href="work/patronexperience.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/patron-2.png" alt="">
             <div class="overlay">
               <h2>the patrón experience</h2>
               <h3>Midnight Commercial</h3>
@@ -42,7 +42,7 @@
             </div>
           </a>
           <a href="work/newnewyork.php">
-            <img src="assets/thumbnails/flandill.png" alt="">
+            <img src="assets/thumbnails/newnewyork-2.png" alt="">
             <div class="overlay">
               <h2>New New York Icons</h2>
               <h3>Midnight Commercial</h3>
@@ -96,7 +96,7 @@
               <h2>sol-3</h2>
             </div>
           </a>
-          <a href="work/pattern.php">
+          <a href="work/pattern/">
             <img src="assets/thumbnails/pattern.png" alt="">
             <div class="overlay">
               <h2>pattern</h2>
@@ -114,7 +114,7 @@
               <h2>cityscape</h2>
             </div>
           </a>
-          <a href="http://lauriewaxman.com/work/scribbler/">
+          <a href="work/scribbler/">
             <img src="assets/thumbnails/scribbler.png" alt="">
             <div class="overlay">
               <h2>scribbler</h2>
