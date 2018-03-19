@@ -28,10 +28,24 @@
               <h2>alphabet iterations</h2>
             </div>
           </a>
+          <a href="work/patronexperience.php">
+            <img src="assets/thumbnails/flandill.png" alt="">
+            <div class="overlay">
+              <h2>the patrón experience</h2>
+              <h3>Midnight Commercial</h3>
+            </div>
+          </a>
           <a href="work/bindthisbook.php">
             <img src="assets/thumbnails/bindthisbook.png" alt="">
             <div class="overlay">
               <h2>bind this book</h2>
+            </div>
+          </a>
+          <a href="work/newnewyork.php">
+            <img src="assets/thumbnails/flandill.png" alt="">
+            <div class="overlay">
+              <h2>New New York Icons</h2>
+              <h3>Midnight Commercial</h3>
             </div>
           </a>
           <a href="work/flandill.php">

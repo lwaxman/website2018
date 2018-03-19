@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
-@import url('https://fonts.googleapis.com/css?family=Alegreya:700');
-@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:700');
 @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Eczar:400,500,600');
-@import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
-$project-purple: #7a7af9;
-$dark-purple: #390082;
-$dark-purple: #574BA3;
-$dark-purple: #292b87;
-$about-purple: #a45fc9;
-$label-size: 8vh; 
-$body-color: #220689;
+
+$purple: #292b87;
+$dark-purple: #1d1f60;
+$body-color: #1d1f60;
 $highlight: #BFFFFF;
 
 html{
@@ -35,7 +26,16 @@ h2{
 	-webkit-text-stroke: 1px $dark-purple;
 	-moz-text-stroke: 1px $dark-purple;
 	color: white;
-	margin-bottom: 3rem;
+}
+
+h3{
+	font-family: "Averia Sans Libre", sans-serif;
+	text-transform: uppercase;
+	font-size: 3rem;
+	line-height: 3rem;
+	color: $dark-purple;
+	text-align: center;
+	margin-top: 1rem;
 }
 
 p, blockquote{
@@ -61,7 +61,7 @@ a{
 		color: $body-color;
 	}
 	&:hover{
-		color: $highlight;
+		color: $purple;
 	}
 }
 
@@ -296,6 +296,14 @@ section{
 		left: 5%;
 		padding-top: 20.5rem;
 		padding-bottom: 20rem;
+		h2{
+			margin-bottom: 3rem;
+		}
+		h3{
+			margin-top: -2.6rem;
+		    margin-bottom: 4rem;
+		    text-align: left;
+		}
 		div.img-group{
 			margin-top: 5rem;
 			margin-bottom: 5rem;
