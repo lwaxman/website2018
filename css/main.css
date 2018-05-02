@@ -59,8 +59,7 @@ menu {
   top: 0px; }
   menu svg {
     stroke-width: 0.18rem;
-    stroke: #1d1f60;
-    fill: white; }
+    stroke: #1d1f60; }
     menu svg:hover path, menu svg line {
       fill: #BFFFFF; }
   menu .label {
@@ -122,6 +121,7 @@ section {
   margin-top: -3px; }
 
 #header {
+  background: rgba(132, 127, 255, 0.88);
   overflow: hidden;
   height: 101vh; }
   #header img.bg {
@@ -139,8 +139,7 @@ section {
     position: absolute; }
     #header img.plant#spider {
       z-index: 10;
-      width: 40%;
-      max-width: 500px;
+      width: 30%;
       top: 0px;
       left: 5%; }
     #header img.plant#ficus {
@@ -175,7 +174,6 @@ section {
       bottom: 12vw; }
 
 #work {
-  background: rgba(57, 0, 130, 0.8);
   background: rgba(90, 90, 248, 0.85);
   position: relative;
   display: block; }
@@ -188,6 +186,7 @@ section {
     padding-bottom: 10rem;
     position: relative; }
     #work #workcontent a {
+      background: #84a1ff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -262,23 +261,23 @@ section {
   #header img.plant {
     position: absolute; }
     #header img.plant#spider {
-      width: 30%;
+      width: 22%;
       top: 0px;
       left: 5%; }
     #header img.plant#big-leaf {
-      width: 28%;
+      width: 20%;
       left: 2%;
       bottom: 7vw; }
     #header img.plant#blue {
-      width: 25%;
+      width: 20%;
       left: 12%;
       bottom: 2vw; }
     #header img.plant#ficus {
-      width: 32%;
+      width: 25%;
       right: 16%;
       bottom: 10vw; }
     #header img.plant#green {
-      width: 20%;
+      width: 15%;
       right: 2%;
       bottom: 8vw; }
     #header img.plant#snake {
@@ -304,7 +303,8 @@ section {
     flex-direction: row;
     align-items: flex-start; }
     #work #workcontent a {
-      width: 50%;
+      width: 47%;
+      margin: 10px;
       height: auto; }
       #work #workcontent a img {
         opacity: 1; }
@@ -312,7 +312,7 @@ section {
         display: none;
         width: 50%; }
       #work #workcontent a:hover img {
-        opacity: 0.3; }
+        opacity: 0.2; }
       #work #workcontent a:hover div.overlay {
         display: block; }
 
@@ -365,15 +365,15 @@ section {
     flex-direction: row;
     align-items: flex-start; }
     #work #workcontent a {
-      width: 33%;
+      width: 31%;
       height: auto; }
       #work #workcontent a img {
         opacity: 1; }
       #work #workcontent a div.overlay {
         display: none;
-        width: 33%; }
+        width: 31%; }
       #work #workcontent a:hover img {
-        opacity: 0.3; }
+        opacity: 0.2; }
       #work #workcontent a:hover div.overlay {
         display: block; }
 
