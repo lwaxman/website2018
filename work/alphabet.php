@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Laurie Waxman</title>
         <link rel="stylesheet" href="../css/main.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>s
     </head>
     <body>
         <canvas id="canvas"></canvas>
@@ -13,26 +15,26 @@
                 <p>A multipart typographic experiment inspired by anonymous interactions on the internet.</p>
                 <p>In its first iteration, I ran a roughed up version of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway’s Game of Life</a> over some letters to see its effects on typography. I tried several versions of the algorithm before landing on this one, which I thought was pretty darn sweet. Next, I put it to use.</p>
                 <div class="img-group">
-                    <img class="big" src="images/alphabet2.jpg" alt="alphabet iteration poster">  
-                    <img class="big" src="images/alphabet1.gif" alt="alphabet iteration animated">
+                    <img class="big lazy" data-src="images/alphabet2.jpg" alt="alphabet iteration poster">  
+                    <img class="big lazy" data-src="images/alphabet1.gif" alt="alphabet iteration animated">
                 </div>
                 <p>The internet's anonymous hive-mind mentality can often get out of control. In December 2013, Justine Sacco&mdash;senior director of corporate communications at IAC&mdash;made a rather daft mistake. Just before boarding a plane, she posted a tweet. Sam Biddle, an employee at Gawker, happened on the Sacco’s tweet and shared it.</p>
                 <blockquote>“And now, a funny Holiday joke from IAC's PR Boss: 'Going to Africa. Hope I don’t get AIDS. Just kidding. I’m white!'</br>— Justine Sacco (@JustinSacco) December 20, 2013”</blockquote>
                 <p>With Biddle’s following, the tweet spread like wildfire, and Sacco was suddenly subject to hate-mail, threats and other forms of cyber-bullying. Within hours, thousands of people had seen and shared her tweet, but while all this was happening, Justine Sacco sat comfortably on a plane destined for South Africa and her own downfall.</p>
                 <p>Using this case as an example, I applied my typographical distortion to the replies to Sam Biddles repost, in escalating iterations to emulate the procession of the event. The whole book was generated in Processing, and is bound in French-fold, with the original undistorted replies hidden in the interiors.</p>
                 <div class="img-group">
-                    <img class="big" src="images/alphamata1.jpg" alt="Justine Sacco book">
-                    <img class="big" src="images/alphamata2.jpg" alt="Justine Sacco book">
-                    <img class="big" src="images/alphamata3.jpg" alt="Justine Sacco book">
-                    <img class="big" src="images/alphamata4.jpg" alt="Justine Sacco book">
-                    <img class="big" src="images/alphamata5.jpg" alt="Justine Sacco book">
-                    <img class="big" src="images/alphamata6.jpg" alt="Justine Sacco book">
-                    <img class="big" src="images/alphamata7.jpg" alt="Justine Sacco book">
-                    <img class="big" src="images/alphamata8.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata1.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata2.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata3.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata4.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata5.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata6.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata7.jpg" alt="Justine Sacco book">
+                    <img class="big lazy" data-src="images/alphamata8.jpg" alt="Justine Sacco book">
                 </div>
                 <p>While I enjoyed making the book, I thought the distortion could be better connected the the words it was affecting. With this in mind, I built an interactive web experiment using <a href="http://www.alchemyapi.com/api/sentiment-analysis">sentiment analysis</a> to distort comments left by users.</p> 
                 <div class="img-group">
-                    <img class="big" src="images/alphabet_interactive.png" alt="interactive version">
+                    <img class="big lazy" data-src="images/alphabet_interactive.png" alt="interactive version">
                 </div>
             </div>
           </section>
@@ -46,5 +48,6 @@
             </a>
         </menu>
         <script src="../js/automatab.js"></script>
+        <script src="../js/page.js"></script>
     </body>
 </html>

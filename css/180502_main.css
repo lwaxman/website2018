@@ -209,7 +209,7 @@ section {
           line-height: 5rem; }
 
 #about {
-  background: rgba(164, 95, 201, 0.85);
+  background: rgba(164, 95, 201, 0.93);
   position: relative;
   height: 100vh; }
   #about #aboutcontent {
@@ -220,6 +220,7 @@ section {
   #about img {
     position: absolute;
     bottom: 0rem;
+    /*left: 0;*/
     width: 40%; }
 
 #project {
@@ -320,6 +321,8 @@ section {
     width: 60%;
     left: 25%;
     top: 20%; }
+  #about img {
+    width: 40%; }
 
   #project #projectcontent .small {
     width: 50%; }
@@ -381,6 +384,8 @@ section {
     width: 45%;
     left: 40%;
     top: 20%; }
+  #about img {
+    width: 40%; }
 
   #project #projectcontent {
     max-width: 1400px;
