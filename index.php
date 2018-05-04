@@ -27,13 +27,13 @@
           <a href="work/bindthisbook.php">
             <img src="assets/thumbnails-3/bindthisbook.png" alt="">
             <div class="overlay">
-              <h2>bind this book</h2>
+              <h2>Bind This Book</h2>
             </div>
           </a>
           <a href="work/sproutandkernel.php">
             <img src="assets/thumbnails-3/sproutandkernel.png" alt="">
             <div class="overlay">
-              <h2>sprout & kernel</h2>
+              <h2>Sprout & Kernel</h2>
             </div>
           </a>
           <a href="work/bookcovers.php">
@@ -46,20 +46,20 @@
           <a href="work/alphabet.php">
             <img src="assets/thumbnails-3/alphabet.png" alt="">
             <div class="overlay">
-              <h2>alphabet iterations</h2>
+              <h2>Alphabet Iterations</h2>
             </div>
           </a>
           <a href="work/patronexperience.php">
             <img src="assets/thumbnails-3/patron.png" alt="">
             <div class="overlay">
-              <h2>the patrón experience</h2>
+              <h2>The Patrón Experience</h2>
               <h3>Midnight Commercial</h3>
             </div>
           </a>
           <a href="work/ithilien.php">
             <img src="assets/thumbnails-3/ithilien.png" alt="">
             <div class="overlay">
-              <h2>ithilien</h2>
+              <h2>Ithilien</h2>
             </div>
           </a>
           <a href="work/newnewyork.php">
@@ -72,7 +72,7 @@
           <a href="work/flandill.php">
             <img src="assets/thumbnails-3/flandill.png" alt="">
             <div class="overlay">
-              <h2>flandill</h2>
+              <h2>Flandill</h2>
             </div>
           </a>
           <!-- <a href="work/notadiner.php">
@@ -91,85 +91,85 @@
           <a href="work/airquality.php">
             <img src="assets/thumbnails-3/airquality.png" alt="">
             <div class="overlay">
-              <h2>air quality</h2>
+              <h2>Air Quality</h2>
             </div>
           </a>
           <a href="work/bfadt.php">
             <img src="assets/thumbnails-3/bfadt.png" alt="">
             <div class="overlay">
-              <h2>bfadt</h2>
+              <h2>BFA DT</h2>
             </div>
           </a>
           <a href="work/automatab.php">
             <img src="assets/thumbnails-3/automatab.png" alt="">
             <div class="overlay">
-              <h2>automatab</h2>
+              <h2>Automatab</h2>
             </div>
           </a>
           <a href="work/garden.php">
             <img src="assets/thumbnails-3/garden.png" alt="">
             <div class="overlay">
-              <h2>garden</h2>
+              <h2>Garden</h2>
             </div>
           </a>
           <a href="work/meindlfigurines.php">
             <img src="assets/thumbnails-3/meindlfigurines.png" alt="">
             <div class="overlay">
-              <h2>meindl figurines</h2>
+              <h2>Meindl Figurines</h2>
             </div>
           </a>
           <a href="work/ardent.php">
             <img src="assets/thumbnails-3/ardent.png" alt="">
             <div class="overlay">
-              <h2>ardent</h2>
+              <h2>Ardent</h2>
             </div>
           </a>
           <a href="work/sol-3.php">
             <img src="assets/thumbnails-3/sol-3.png" alt="">
             <div class="overlay">
-              <h2>sol-3</h2>
+              <h2>Sol-3</h2>
             </div>
           </a>
           <a href="work/pattern/">
             <img src="assets/thumbnails-3/pattern.png" alt="">
             <div class="overlay">
-              <h2>pattern</h2>
+              <h2>Pattern</h2>
             </div>
           </a>
           <a href="work/tealights.php">
             <img src="assets/thumbnails-3/tealights.png" alt="">
             <div class="overlay">
-              <h2>tealights</h2>
+              <h2>Tealights</h2>
             </div>
           </a>
           <a href="work/cityscape.php">
             <img src="assets/thumbnails-3/cityscape.png" alt="">
             <div class="overlay">
-              <h2>cityscape</h2>
+              <h2>Cityscape</h2>
             </div>
           </a>
           <a href="work/scribbler/">
             <img src="assets/thumbnails-3/scribbler.png" alt="">
             <div class="overlay">
-              <h2>scribbler</h2>
+              <h2>Scribbler</h2>
             </div>
           </a>
           <a href="work/calendar.php">
             <img src="assets/thumbnails-3/calendar.png" alt="">
             <div class="overlay">
-              <h2>2016 calendar</h2>
+              <h2>2016 Calendar</h2>
             </div>
           </a>
           <a href="work/coasttocoast.php">
             <img src="assets/thumbnails-3/coasttocoast.png" alt="">
             <div class="overlay">
-              <h2>coast to coast</h2>
+              <h2>Coast to Coast</h2>
             </div>
           </a>
           <a href="work/misc.php">
             <img src="assets/thumbnails-3/misc.png" alt="">
             <div class="overlay">
-              <h2>misc.</h2>
+              <h2>Misc.</h2>
             </div>
           </a>
         </div>

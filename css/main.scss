@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,400,700');
-
+@import url("https://use.typekit.net/hvq7vja.css");
 
 $purple: #292b87;
 $dark-purple: #1d1f60;
 $body-color: #1d1f60;
-$highlight: #BFFFFF;
+// $highlight: #3AC2C2;
+$highlight: #96E6FF;
 $header-color: #CFCFE4;
 
 html{
@@ -18,21 +17,16 @@ html{
 }
 
 h2{
-	font-family: "Averia Sans Libre", sans-serif;
-	text-transform: uppercase;
-	font-size: 6rem;
+	font-family: "alverata", serif;
+	font-size: 5rem;
 	line-height: 5.6rem;
-	font-weight: 400; 
-	text-stroke: 1px $dark-purple;
-	-webkit-text-stroke: 1px $dark-purple;
-	-moz-text-stroke: 1px $dark-purple;
-	color: white;
+	font-weight: bold; 
+	color: #1d1f60;
 }
 
 h3{
-	font-family: "Averia Sans Libre", sans-serif;
-	text-transform: uppercase;
-	font-size: 3rem;
+	font-family: "alverata", serif;
+	font-size: 2.8rem;
 	line-height: 3rem;
 	color: $dark-purple;
 	text-align: center;
@@ -40,10 +34,21 @@ h3{
 }
 
 p, blockquote{
-	font-family: "Georgia", serif;
+	font-family: "calluna", "Georgia", serif;
 	color: $body-color;
 	font-size: 4rem;
 	margin-bottom: 3rem;
+	a{
+		font-style: italic;
+		text-decoration: none;
+		color: $body-color;
+		&:visited{
+			color: $body-color;
+		}
+		&:hover{
+			color: $highlight;
+		}
+	}
 }
 
 blockquote{
@@ -51,20 +56,6 @@ blockquote{
 	border-left: 2px solid $body-color;
 }
 
-a{
-	font-family: "Averia Serif Libre", sans-serif;
-	font-weight: 700;
-	font-size: 4rem;
-	letter-spacing: -0.08rem;
-	text-decoration: none;
-	color: $body-color;
-	&:visited{
-		color: $body-color;
-	}
-	&:hover{
-		color: $purple;
-	}
-}
 
 #canvas{
 	z-index: -1000; 
@@ -76,31 +67,24 @@ menu{
 	position: fixed;
 	top: 0px;
 	svg{
-		stroke-width: 0.18rem; 
-		stroke: $dark-purple; 
-		path.cls-1{
-			// fill: none;// #747474; 
-			// fill: rgba(30,30,100,0.2);
-			// fill: rgba(40,40,60,0.2);
-		}
-		&:hover path, line{
-			fill: $highlight;
-		}
-	}
-	.label{
 		position: fixed;
-		height: 8vw;
+		height: 10vw;
 		margin: 3rem;
 		z-index: 100; 
+		path, polygon{
+			fill: $dark-purple;
+		}
+		&:hover path, &:hover polygon{
+			fill: $highlight;
+		}
 		&#home-button{
 			top: 0px; 
 		}
 		&#about-button{
 			right: 10vw;
 			bottom: 0px;
-			#hand path,
-			#hand line{
-				transform-origin: 89% 48%;
+			.hand{
+				transform-origin: 87% 54%;
 				-webkit-transition: transform 0.5s;
 			       -moz-transition: transform 0.5s;
 			        -ms-transition: transform 0.5s;
@@ -108,43 +92,40 @@ menu{
 			}
 		}
 		&#work-button{
-			width: 8vw;
+			width: 10vw;
 			height: auto;
 			top: 11vw; 
 			right: 0%;
-			#hand path,
-			#hand line{
-				transform-origin: 47% 11%;
+			.hand{
+				transform-origin: 53% 12%;
 				-webkit-transition: transform 0.5s;
 			       -moz-transition: transform 0.5s;
 			        -ms-transition: transform 0.5s;
 			            transition: transform 0.5s;
 			}
 		}
-	}
-	.fade{
-		path, line{
-			stroke: #5a5af8; 
-			fill: #9a9afa; 
-		}
-		&#work-button{
-			#hand path,
-			#hand line{
-				transform-origin: 47% 11%;
-				-webkit-transform: rotate(225deg);
-				-moz-transform: rotate(225deg);
-				transform: rotate(225deg);
-				
+		&.fade{
+			&:hover{
+				path,
+				polygon{
+					fill: $highlight;
+				}
 			}
-		}
-		&#about-button{
-			#hand path,
-			#hand line{
-				transform-origin: 89% 48%;
+			path,
+			polygon{
+				fill: #5557b1;
+			}
+			&#work-button .hand{
+				transform-origin: 53% 12%;
 				-webkit-transform: rotate(225deg);
 				-moz-transform: rotate(225deg);
 				transform: rotate(225deg);
-				
+			}
+			&#about-button .hand{
+				transform-origin: 88% 47%;
+				-webkit-transform: rotate(225deg);
+				-moz-transform: rotate(225deg);
+				transform: rotate(225deg);
 			}
 		}
 	}
@@ -234,7 +215,7 @@ section{
 }
 
 #work{
-	background: rgba(90,90,248,0.85);
+	background: rgba(129,165,255,0.90);
 	position: relative;
 	display: block;
 	#workcontent{
@@ -246,27 +227,26 @@ section{
 		padding-bottom: 10rem;
 		position: relative;
 		a{
-			background: #84a1ff;
+			background: $highlight;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 75vw;
+			// height: 75vw;
+			margin-bottom: 30px;
 			img{
-				opacity: 0.6;
+				opacity: 0.2;
 				width: 100%;
 				height: auto;
 			}
 			div.overlay{
 				display: block;
+				font-style: normal;
 				position: absolute;
 				width: 100%;
 				h2{
 					text-align: center;
-					font-size: 6rem;
-					text-stroke: 1px $dark-purple;
-					-webkit-text-stroke: 1px $dark-purple;
-					-moz-text-stroke: 1px $dark-purple;
-					line-height: 5rem;
+					// font-size: 5rem;
+					// line-height: 5.5rem;
 				}
 			}
 		}
@@ -274,7 +254,7 @@ section{
 }
 
 #about{
-	background: rgba(164,95,201,0.85);
+	background: rgba(213,149,247,0.95);
 
 	position: relative;
 	height: 100vh; 
@@ -294,7 +274,7 @@ section{
 
 #project{
 	pointer-events: unset;
-	background: rgba(122,122,249,0.88);
+	background: rgba(151,151,255,0.95);
 	#projectcontent{
 		position: relative;
 		width: 75%; 
@@ -329,18 +309,14 @@ section{
 	a{
 		font-size: 2.3rem;
 	}
+	h2{
+		font-size: 4rem;
+		line-height: 4.5rem;
+	}
+	h3{
+		font-size: 2rem;
+	}
 	#header{
-		.bg{
-			&#img-top{
-				content:url(../assets/d-squiggle-top.png);
-				width: 60%; 
-				right: 0px;
-			}
-			&#img-bottom{
-				width: 100%; 
-				content:url(../assets/d-squiggle-bottom.png);
-			}
-		}
 		img.plant{
 			position: absolute;
 			&#spider{
@@ -381,14 +357,14 @@ section{
 		}
 	}
 	menu{
-		.label{
-			height: 7vh;
+		svg{
+			height: 10vh;
 			&#work-button{
-				width: 7vh;
+				width: 10vh;
 				top: 10vh; 
 			}
 			&#about-button{
-				right: 7vh;
+				right: 10vh;
 			}
 		}
 	}
@@ -404,6 +380,7 @@ section{
 				height: auto;
 				img{
 					opacity: 1;
+					transition: op3acity 0.3s;
 				}
 				div.overlay{
 					display: none;
@@ -485,7 +462,7 @@ section{
 	}
 	#work{
 		#workcontent{
-			max-width: 1200px;
+			max-width: 1600px;
 			left: 10%;
 			display: flex;
 			flex-wrap: wrap;
@@ -498,16 +475,7 @@ section{
 					opacity: 1;
 				}
 				div.overlay{
-					display: none;
 					width: 31%;
-				}
-				&:hover{
-					img{
-						opacity: 0.2;
-					}
-					div.overlay{
-						display: block;
-					}
 				}
 			}
 
@@ -532,10 +500,14 @@ section{
 
 @media (min-width: 800px) and (orientation: portrait){
 	menu{
-		.label{
-			height: 8vw;
+		svg{
+			height: 10vw;
 			&#work-button{
-				width: 8vw;
+				width: 10vw;
+				top: 10vw;
+			}
+			&#about-button{
+				right: 10vw;
 			}
 		}
 	}
@@ -548,7 +520,7 @@ section{
 			justify-content: center;
 			align-items: center;
 			img{
-				opacity: 0.4;
+				opacity: 0.2;
 			}
 			div.overlay{
 				display: block;

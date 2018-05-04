@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,400,700");
+@import url("https://use.typekit.net/hvq7vja.css");
 html {
   font-size: 10px; }
 
@@ -8,46 +7,37 @@ html {
   padding: 0px; }
 
 h2 {
-  font-family: "Averia Sans Libre", sans-serif;
-  text-transform: uppercase;
-  font-size: 6rem;
+  font-family: "alverata", serif;
+  font-size: 5rem;
   line-height: 5.6rem;
-  font-weight: 400;
-  text-stroke: 1px #1d1f60;
-  -webkit-text-stroke: 1px #1d1f60;
-  -moz-text-stroke: 1px #1d1f60;
-  color: white; }
+  font-weight: bold;
+  color: #1d1f60; }
 
 h3 {
-  font-family: "Averia Sans Libre", sans-serif;
-  text-transform: uppercase;
-  font-size: 3rem;
+  font-family: "alverata", serif;
+  font-size: 2.8rem;
   line-height: 3rem;
   color: #1d1f60;
   text-align: center;
   margin-top: 1rem; }
 
 p, blockquote {
-  font-family: "Georgia", serif;
+  font-family: "calluna", "Georgia", serif;
   color: #1d1f60;
   font-size: 4rem;
   margin-bottom: 3rem; }
+  p a, blockquote a {
+    font-style: italic;
+    text-decoration: none;
+    color: #1d1f60; }
+    p a:visited, blockquote a:visited {
+      color: #1d1f60; }
+    p a:hover, blockquote a:hover {
+      color: #96E6FF; }
 
 blockquote {
   padding-left: 3rem;
   border-left: 2px solid #1d1f60; }
-
-a {
-  font-family: "Averia Serif Libre", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  letter-spacing: -0.08rem;
-  text-decoration: none;
-  color: #1d1f60; }
-  a:visited {
-    color: #1d1f60; }
-  a:hover {
-    color: #292b87; }
 
 #canvas {
   z-index: -1000;
@@ -58,54 +48,52 @@ menu {
   position: fixed;
   top: 0px; }
   menu svg {
-    stroke-width: 0.18rem;
-    stroke: #1d1f60; }
-    menu svg:hover path, menu svg line {
-      fill: #BFFFFF; }
-  menu .label {
     position: fixed;
-    height: 8vw;
+    height: 10vw;
     margin: 3rem;
     z-index: 100; }
-    menu .label#home-button {
+    menu svg path, menu svg polygon {
+      fill: #1d1f60; }
+    menu svg:hover path, menu svg:hover polygon {
+      fill: #96E6FF; }
+    menu svg#home-button {
       top: 0px; }
-    menu .label#about-button {
+    menu svg#about-button {
       right: 10vw;
       bottom: 0px; }
-      menu .label#about-button #hand path,
-      menu .label#about-button #hand line {
-        transform-origin: 89% 48%;
+      menu svg#about-button .hand {
+        transform-origin: 87% 54%;
         -webkit-transition: transform 0.5s;
         -moz-transition: transform 0.5s;
         -ms-transition: transform 0.5s;
         transition: transform 0.5s; }
-    menu .label#work-button {
-      width: 8vw;
+    menu svg#work-button {
+      width: 10vw;
       height: auto;
       top: 11vw;
       right: 0%; }
-      menu .label#work-button #hand path,
-      menu .label#work-button #hand line {
-        transform-origin: 47% 11%;
+      menu svg#work-button .hand {
+        transform-origin: 53% 12%;
         -webkit-transition: transform 0.5s;
         -moz-transition: transform 0.5s;
         -ms-transition: transform 0.5s;
         transition: transform 0.5s; }
-  menu .fade path, menu .fade line {
-    stroke: #5a5af8;
-    fill: #9a9afa; }
-  menu .fade#work-button #hand path,
-  menu .fade#work-button #hand line {
-    transform-origin: 47% 11%;
-    -webkit-transform: rotate(225deg);
-    -moz-transform: rotate(225deg);
-    transform: rotate(225deg); }
-  menu .fade#about-button #hand path,
-  menu .fade#about-button #hand line {
-    transform-origin: 89% 48%;
-    -webkit-transform: rotate(225deg);
-    -moz-transform: rotate(225deg);
-    transform: rotate(225deg); }
+    menu svg.fade:hover path,
+    menu svg.fade:hover polygon {
+      fill: #96E6FF; }
+    menu svg.fade path,
+    menu svg.fade polygon {
+      fill: #5557b1; }
+    menu svg.fade#work-button .hand {
+      transform-origin: 53% 12%;
+      -webkit-transform: rotate(225deg);
+      -moz-transform: rotate(225deg);
+      transform: rotate(225deg); }
+    menu svg.fade#about-button .hand {
+      transform-origin: 88% 47%;
+      -webkit-transform: rotate(225deg);
+      -moz-transform: rotate(225deg);
+      transform: rotate(225deg); }
   menu #close-button {
     right: 0px; }
   menu #next {
@@ -174,7 +162,7 @@ section {
       bottom: 12vw; }
 
 #work {
-  background: rgba(90, 90, 248, 0.85);
+  background: rgba(129, 165, 255, 0.9);
   position: relative;
   display: block; }
   #work #workcontent {
@@ -186,29 +174,25 @@ section {
     padding-bottom: 10rem;
     position: relative; }
     #work #workcontent a {
-      background: #84a1ff;
+      background: #96E6FF;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 75vw; }
+      margin-bottom: 30px; }
       #work #workcontent a img {
-        opacity: 0.6;
+        opacity: 0.2;
         width: 100%;
         height: auto; }
       #work #workcontent a div.overlay {
         display: block;
+        font-style: normal;
         position: absolute;
         width: 100%; }
         #work #workcontent a div.overlay h2 {
-          text-align: center;
-          font-size: 6rem;
-          text-stroke: 1px #1d1f60;
-          -webkit-text-stroke: 1px #1d1f60;
-          -moz-text-stroke: 1px #1d1f60;
-          line-height: 5rem; }
+          text-align: center; }
 
 #about {
-  background: rgba(164, 95, 201, 0.85);
+  background: rgba(213, 149, 247, 0.95);
   position: relative;
   height: 100vh; }
   #about #aboutcontent {
@@ -223,7 +207,7 @@ section {
 
 #project {
   pointer-events: unset;
-  background: rgba(122, 122, 249, 0.88); }
+  background: rgba(151, 151, 255, 0.95); }
   #project #projectcontent {
     position: relative;
     width: 75%;
@@ -251,13 +235,13 @@ section {
   a {
     font-size: 2.3rem; }
 
-  #header .bg#img-top {
-    content: url(../assets/d-squiggle-top.png);
-    width: 60%;
-    right: 0px; }
-  #header .bg#img-bottom {
-    width: 100%;
-    content: url(../assets/d-squiggle-bottom.png); }
+  h2 {
+    font-size: 4rem;
+    line-height: 4.5rem; }
+
+  h3 {
+    font-size: 2rem; }
+
   #header img.plant {
     position: absolute; }
     #header img.plant#spider {
@@ -289,13 +273,13 @@ section {
       right: 12%;
       bottom: 8vw; }
 
-  menu .label {
-    height: 7vh; }
-    menu .label#work-button {
-      width: 7vh;
+  menu svg {
+    height: 10vh; }
+    menu svg#work-button {
+      width: 10vh;
       top: 10vh; }
-    menu .label#about-button {
-      right: 7vh; }
+    menu svg#about-button {
+      right: 10vh; }
 
   #work #workcontent {
     display: flex;
@@ -307,7 +291,8 @@ section {
       margin: 10px;
       height: auto; }
       #work #workcontent a img {
-        opacity: 1; }
+        opacity: 1;
+        transition: op3acity 0.3s; }
       #work #workcontent a div.overlay {
         display: none;
         width: 50%; }
@@ -358,7 +343,7 @@ section {
       bottom: 8vw; }
 
   #work #workcontent {
-    max-width: 1200px;
+    max-width: 1600px;
     left: 10%;
     display: flex;
     flex-wrap: wrap;
@@ -370,12 +355,7 @@ section {
       #work #workcontent a img {
         opacity: 1; }
       #work #workcontent a div.overlay {
-        display: none;
         width: 31%; }
-      #work #workcontent a:hover img {
-        opacity: 0.2; }
-      #work #workcontent a:hover div.overlay {
-        display: block; }
 
   #about #aboutcontent {
     width: 45%;
@@ -386,17 +366,20 @@ section {
     max-width: 1400px;
     left: 10%; } }
 @media (min-width: 800px) and (orientation: portrait) {
-  menu .label {
-    height: 8vw; }
-    menu .label#work-button {
-      width: 8vw; } }
+  menu svg {
+    height: 10vw; }
+    menu svg#work-button {
+      width: 10vw;
+      top: 10vw; }
+    menu svg#about-button {
+      right: 10vw; } }
 @media (hover: none) {
   #work #workcontent a {
     display: flex;
     justify-content: center;
     align-items: center; }
     #work #workcontent a img {
-      opacity: 0.4; }
+      opacity: 0.2; }
     #work #workcontent a div.overlay {
       display: block;
       position: absolute; } }

@@ -23,9 +23,9 @@ $(document).ready(function(){
 	});
 
 	//hand rotation functions trigger on scroll
+	var workContainer = document.getElementById('work');
+	var aboutContainer = document.getElementById('about');
 	window.onscroll = function() {
-		var workContainer = document.getElementById('work');
-		var aboutContainer = document.getElementById('about');
 		rotateWorkHand(workContainer);
 		rotateAboutHand(aboutContainer);
 	}
@@ -34,31 +34,24 @@ $(document).ready(function(){
 	    var e = element.getBoundingClientRect();
 	    if(e.bottom < window.innerHeight*0.25){
 	    //POINT UP
-	    	$("#work-button #hand path").css("transform", "rotate(180deg)");
-	    	$("#work-button #hand line").css("transform", "rotate(180deg)");
-
+	    	$("#work-button .hand").css("transform", "rotate(180deg)");
 	    }else if(e.top <= 50 && e.bottom >= window.innerHeight*0.75){
 	    //POINT LEFT
-	    	$("#work-button #hand path").css("transform", "rotate(90deg)");
-	    	$("#work-button #hand line").css("transform", "rotate(90deg)");
+	    	$("#work-button .hand").css("transform", "rotate(90deg)");
 	    }else if(e.top > window.innerHeight){
     	//POINT DOWN
-	    	$("#work-button #hand path").css("transform", "rotate(0deg)");
-	    	$("#work-button #hand line").css("transform", "rotate(0deg)");
+	    	$("#work-button .hand").css("transform", "rotate(0deg)");
 	    }
-
 	}
 
 	function rotateAboutHand(element) {
 	    var e = element.getBoundingClientRect();
 		if(e.top <= window.innerHeight*0.75){
 		//POINT LEFT
-			$("#about-button #hand path").css("transform", "rotate(90deg)");
-	    	$("#about-button #hand line").css("transform", "rotate(90deg)");
+			$("#about-button .hand").css("transform", "rotate(90deg)");
 		}else{
 		 //POINT DOWN
-			$("#about-button #hand path").css("transform", "rotate(0deg)");
-	    	$("#about-button #hand line").css("transform", "rotate(0deg)");
+			$("#about-button .hand").css("transform", "rotate(0deg)");
 		}
 	}
 
