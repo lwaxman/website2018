@@ -11,14 +11,16 @@ menu {
   top: 0px;
   position: fixed; }
   menu .buttons {
-    display: none;
+    position: absolute;
+    left: 100vw;
     background: #eee;
     width: 100vw;
-    height: 100vh; }
+    height: 100vh;
+    transition: left 1s; }
     menu .buttons h3 {
       position: relative;
       top: 40%;
-      font-size: 24px;
+      font-size: 4.5vw;
       text-align: center;
       width: 100%; }
       menu .buttons h3 a {
@@ -30,6 +32,9 @@ menu {
           letter-spacing: 0.7px; }
   menu #menuToggle {
     position: fixed;
+    width: 8vw;
+    max-width: 80px;
+    height: auto;
     top: 30px;
     right: 30px; }
 
@@ -47,29 +52,51 @@ section#header {
     margin: auto;
     top: 40%;
     width: 80%;
-    font-size: 30px;
-    max-width: 400px; }
+    font-size: 4.5vw;
+    max-width: 600px; }
+
+p {
+  font-family: "source-sans-pro", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 20px; }
+  p a {
+    font-style: italic; }
+    p a:hover {
+      text-decoration: underline; }
+
+blockquote {
+  font-family: "source-sans-pro", sans-serif;
+  font-weight: 300;
+  margin: 100px auto;
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-left: 2px solid black;
+  padding-left: 30px; }
+
+h3.sectionTitle {
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 0 40px 0;
+  border-top: 3px dotted black; }
+
+h3.title {
+  margin-top: 8px;
+  font-family: "alverata", serif;
+  font-size: 20px;
+  font-weight: 300; }
+
+h3.skills {
+  font-size: 18px;
+  font-family: "source-sans-pro", sans-serif;
+  color: #66676B;
+  margin-top: 5px;
+  font-weight: 300;
+  font-style: italic; }
 
 section#work {
   margin: auto;
   width: 100%; }
-  section#work h3.sectionTitle {
-    font-size: 18px;
-    width: 100%;
-    padding: 10px 0 40px 0;
-    border-top: 3px dotted black; }
-  section#work h3.title {
-    margin-top: 8px;
-    font-family: "alverata", serif;
-    font-size: 20px;
-    font-weight: 300; }
-  section#work h3.skills {
-    font-size: 18px;
-    font-family: "source-sans-pro", sans-serif;
-    color: #777;
-    margin-top: 5px;
-    font-weight: 300;
-    font-style: italic; }
   section#work #selectedWork {
     padding-top: 100px;
     overflow: hidden;
@@ -91,6 +118,16 @@ section#work {
         font-weight: 300; }
       section#work #selectedWork .project a img {
         width: 100%; }
+      section#work #selectedWork .project a#viewMore h3 {
+        padding: 50px 0 50px 0;
+        border: 3px dotted black;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 100%;
+        text-align: center; }
+        section#work #selectedWork .project a#viewMore h3:hover {
+          background: #eee; }
   section#work #moreWork {
     float: bottom;
     display: flex;
@@ -101,14 +138,131 @@ section#work {
     width: 80%;
     margin: auto; }
     section#work #moreWork .project {
-      width: 48%;
+      width: 100%;
       margin-bottom: 80px; }
       section#work #moreWork .project a {
         color: black; }
         section#work #moreWork .project a h3.title {
           font-weight: 500; }
+        section#work #moreWork .project a h2.selectedHeader {
+          font-family: "alverata", serif;
+          font-weight: 600;
+          font-size: 4.5vw;
+          max-width: 600px;
+          margin-top: 5px; }
+        section#work #moreWork .project a h3.selectedTitle {
+          margin-top: 8px;
+          font-family: "alverata", serif;
+          font-size: 17px;
+          font-weight: 300; }
       section#work #moreWork .project img {
         width: 100%; }
+
+section#fullProject {
+  position: relative;
+  width: 80%;
+  max-width: 1074px;
+  top: 150px;
+  margin: auto; }
+  section#fullProject img {
+    width: 100%; }
+    section#fullProject img#self {
+      width: 80%; }
+  section#fullProject h2.selectedHeader {
+    text-align: center;
+    font-family: "alverata", serif;
+    font-weight: 600;
+    margin: 5px auto 0 auto; }
+  section#fullProject h3 {
+    text-align: center; }
+  section#fullProject .header {
+    margin: auto;
+    width: 100%;
+    max-width: 1074px; }
+  section#fullProject p {
+    margin: 0 auto 20px auto;
+    top: 50px;
+    position: relative; }
+  section#fullProject div.img-group {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: block;
+    overflow: hidden; }
+    section#fullProject div.img-group video.big, section#fullProject div.img-group img.big {
+      width: 100%;
+      margin-top: -4px; }
+    section#fullProject div.img-group img.small {
+      width: 50%;
+      margin-top: -4px; }
+
+section#nextProject {
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+  padding: 50px 0 60px 0;
+  background-image: url(../images/_dots.jpg);
+  background-repeat: repeat;
+  background-size: 150px auto; }
+  section#nextProject .header {
+    width: 80%;
+    max-width: 1074px;
+    margin: auto; }
+    section#nextProject .header a {
+      width: 100%; }
+      section#nextProject .header a h2.selectedHeader {
+        text-align: center;
+        font-family: "alverata", serif;
+        font-weight: 600;
+        width: 66%;
+        margin: 5px auto 0 auto; }
+      section#nextProject .header a h3.skills {
+        color: #454b62; }
+      section#nextProject .header a p {
+        font-size: 18px;
+        color: #454b62; }
+      section#nextProject .header a:hover h2.selectedHeader {
+        text-decoration: underline; }
+
+section#about {
+  width: 80%;
+  max-width: 1074px;
+  padding: 50px 0 100px 0;
+  margin: auto;
+  position: relative; }
+  section#about img#self,
+  section#about div#hello {
+    width: 100%; }
+    section#about img#self h2, section#about img#self h3,
+    section#about div#hello h2,
+    section#about div#hello h3 {
+      text-align: center; }
+      section#about img#self h2.title, section#about img#self h3.title,
+      section#about div#hello h2.title,
+      section#about div#hello h3.title {
+        margin-bottom: 5px; }
+      section#about img#self h2.selectedHeader, section#about img#self h3.selectedHeader,
+      section#about div#hello h2.selectedHeader,
+      section#about div#hello h3.selectedHeader {
+        margin-bottom: 50px; }
+    section#about img#self p,
+    section#about div#hello p {
+      margin-bottom: 20px; }
+
+section#footer {
+  background: #eee;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 50px 0; }
+  section#footer h3 {
+    font-size: 18px;
+    font-family: "source-sans-pro", sans-serif;
+    margin-top: 5px;
+    font-weight: 300;
+    font-style: italic; }
+    section#footer h3 a:hover {
+      text-decoration: underline; }
 
 @media only screen and (min-width: 992px) {
   menu {
@@ -119,6 +273,7 @@ section#work {
     border-top: 2px solid black;
     padding: 10px 0 0 0; }
     menu .buttons {
+      left: auto;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -167,11 +322,63 @@ section#work {
       width: 80%;
       max-width: 1074px; }
       section#work #moreWork .project {
-        width: 30%; } }
+        width: 30%; }
+        section#work #moreWork .project a h2.selectedHeader {
+          width: 100%;
+          font-size: 2.2vw; }
+
+  section#fullProject h2.selectedHeader {
+    font-size: 3vw;
+    text-align: center;
+    font-family: "alverata", serif;
+    font-weight: 600;
+    margin: 5px auto 0 auto;
+    width: 66%; }
+  section#fullProject p {
+    width: 80%; }
+  section#fullProject blockquote {
+    width: 80%; }
+  section#fullProject img#self {
+    width: 50%;
+    margin: 100px auto; }
+
+  section#nextProject h2.selectedHeader {
+    width: 66%;
+    font-size: 3vw; }
+
+  section#about {
+    overflow: hidden;
+    width: 80%;
+    max-width: 1074px;
+    padding: 150px 0 150px 0; }
+    section#about div#hello {
+      margin-top: 30px; }
+      section#about div#hello h2, section#about div#hello h3 {
+        width: 60%;
+        float: right; }
+        section#about div#hello h2.selectedHeader, section#about div#hello h2.title, section#about div#hello h3.selectedHeader, section#about div#hello h3.title {
+          text-align: left; }
+      section#about div#hello p {
+        text-align: left; }
+    section#about img#self {
+      width: 40%;
+      float: left; } }
 @media only screen and (min-width: 1330px) {
   section#work #selectedWork .project {
     margin-bottom: 120px; }
     section#work #selectedWork .project a h2.selectedHeader {
-      font-size: 30px; } }
+      font-size: 30px; }
+  section#work #moreWork .project {
+    margin-bottom: 120px; }
+    section#work #moreWork .project a h2.selectedHeader {
+      font-size: 25px; }
+
+  section#fullProject h2.selectedHeader {
+    font-size: 40px; }
+
+  section#nextProject h2.selectedHeader {
+    font-size: 4.5vw;
+    max-width: 1074px;
+    font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

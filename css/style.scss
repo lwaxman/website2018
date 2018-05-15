@@ -8,22 +8,22 @@
 a{
 	text-decoration: none;
 	color: black;
-
 }
-
 
 menu{
 	top: 0px;
 	position: fixed; 
 	.buttons{
-		display: none;
+		position: absolute; 
+		left: 100vw;
 		background: #eee;
 		width: 100vw; 
 		height: 100vh;
+		transition: left 1s;
 		h3{
 			position: relative;
 			top: 40%;
-			font-size: 24px;
+			font-size: 4.5vw;
 			text-align: center;
 			a{
 				margin: 0 auto 30px auto;
@@ -39,6 +39,9 @@ menu{
 	}
 	#menuToggle{
 		position: fixed;
+		width: 8vw;
+		max-width: 80px;
+		height: auto;
 		top: 30px; 
 		right: 30px;
 	}
@@ -58,34 +61,58 @@ section#header{
 		margin: auto;
 		top: 40%;
 		width: 80%;
-		font-size: 30px;
-		max-width: 400px;
+		font-size: 4.5vw;
+		max-width: 600px;
 	}
+}
+
+p{
+	font-family: "source-sans-pro", sans-serif;
+	font-weight: 300; 
+	font-size: 22px;
+	margin-bottom: 20px;
+	a{
+		font-style: italic;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+blockquote{
+	font-family: "source-sans-pro", sans-serif;
+	font-weight: 300; 
+	margin: 100px auto;
+	font-size: 22px;
+	margin-bottom: 20px;
+	border-left: 2px solid black;
+	padding-left: 30px;
+}
+
+h3.sectionTitle{
+	font-size: 18px;
+	width: 100%; 
+	padding: 10px 0 40px 0;
+	border-top: 3px dotted black;
+}
+h3.title{
+	margin-top: 8px;
+	font-family: "alverata", serif;
+	font-size: 20px;
+	font-weight: 300;
+}
+h3.skills{
+	font-size: 18px;
+	font-family: "source-sans-pro", sans-serif;
+	color: #66676B;
+	margin-top: 5px;
+	font-weight: 300; 
+	font-style: italic;
 }
 
 section#work{
 	margin: auto;
 	width: 100%;
-	h3.sectionTitle{
-		font-size: 18px;
-		width: 100%; 
-		padding: 10px 0 40px 0;
-		border-top: 3px dotted black;
-	}
-	h3.title{
-		margin-top: 8px;
-		font-family: "alverata", serif;
-		font-size: 20px;
-		font-weight: 300;
-	}
-	h3.skills{
-		font-size: 18px;
-		font-family: "source-sans-pro", sans-serif;
-		color: #777;
-		margin-top: 5px;
-		font-weight: 300; 
-		font-style: italic;
-	}
 	#selectedWork{
 		padding-top: 100px;
 		overflow:hidden;
@@ -98,7 +125,6 @@ section#work{
 				h2.selectedHeader{
 					font-family: "alverata", serif;
 					font-weight: 600;
-					// font-size: 30px;
 					font-size: 4.5vw;
 					max-width: 600px;
 					margin-top: 5px;
@@ -110,9 +136,22 @@ section#work{
 					font-size: 17px;
 					font-weight: 300;
 				}
-
 				img{
 					width: 100%;
+				}
+				&#viewMore{
+					h3{
+						padding: 50px 0 50px 0;
+						border: 3px dotted black;
+						box-sizing: border-box;
+					    -moz-box-sizing: border-box;
+					    -webkit-box-sizing: border-box;
+						width: 100%;
+						text-align: center;
+						&:hover{
+							background: #eee;
+						}
+					}
 				}
 			
 			}
@@ -129,17 +168,161 @@ section#work{
 		width: 80%;
 		margin: auto;
 		.project{
-			width: 48%;
+			width: 100%;
 			margin-bottom: 80px;
 			a{
 				color: black;
 				h3.title{
 					font-weight: 500;
 				}
+				h2.selectedHeader{
+					font-family: "alverata", serif;
+					font-weight: 600;
+					font-size: 4.5vw;
+					max-width: 600px;
+					margin-top: 5px;
+					
+				}
+				h3.selectedTitle{
+					margin-top: 8px;
+					font-family: "alverata", serif;
+					font-size: 17px;
+					font-weight: 300;
+				}
 			}
 			img{
 				width: 100%;
 			}
+		}
+	}
+}
+
+section#fullProject{
+	position: relative;
+	width: 80%;
+	max-width: 1074px;
+	top: 150px;
+	margin: auto;
+	img{
+		width: 100%; 
+		&#self{
+			width: 80%; 
+		}
+	}
+	h2.selectedHeader{
+		text-align: center;
+		font-family: "alverata", serif;
+		font-weight: 600;
+		margin: 5px auto 0 auto;
+	}
+	h3{
+		text-align: center;
+	}
+	.header{
+		margin: auto;
+		width: 100%; 
+		max-width: 1074px;
+	}
+	p{	
+		margin: 0 auto 20px auto;
+		// overflow: hidden;
+		top: 50px;
+		position: relative;
+	}
+	div.img-group{
+		position: relative;
+		margin-top: 150px;
+		margin-bottom: 50px;
+		display: block;
+		overflow: hidden;
+		video.big, img.big{
+			width: 100%; 
+			margin-top: -4px;
+		}
+		img.small{
+			width: 50%;
+			margin-top: -4px;
+		}
+	}
+}
+
+section#nextProject{
+	width: 100%; 
+	text-align: center;
+	margin-top: 200px;
+	padding: 50px 0 60px 0;
+	background-image: url(../images/_dots.jpg);
+	background-repeat: repeat;
+	background-size: 150px auto;
+	.header{
+		width: 80%;
+		max-width: 1074px;
+		margin: auto;
+		a{
+			width: 100%;
+			h2.selectedHeader{
+				text-align: center;
+				font-family: "alverata", serif;
+				font-weight: 600;
+				width: 66%;
+				margin: 5px auto 0 auto;
+			}
+			h3.skills{
+				color: #454b62
+			}
+			p{
+				font-size: 18px;
+				color: #454b62
+			}
+			&:hover{
+				h2.selectedHeader{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+section#about{
+	width: 80%;
+    max-width: 1074px;
+    padding: 50px 0 100px 0;
+    margin: auto;
+    position: relative;
+	img#self, 
+	div#hello{
+		width: 100%;
+		h2, h3{
+			text-align: center;
+			&.title{
+				margin-bottom: 5px;
+			}
+			&.selectedHeader{
+				margin-bottom: 50px;
+			}
+		}
+
+		p{
+			margin-bottom: 20px;
+		}
+	}
+	
+}
+
+section#footer{
+	background: #eee;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	padding: 50px 0 50px 0;
+	h3{
+		font-size: 18px;
+		font-family: "source-sans-pro", sans-serif;
+		margin-top: 5px;
+		font-weight: 300; 
+		font-style: italic;
+		a:hover{
+			text-decoration: underline;
 		}
 	}
 }
@@ -156,6 +339,7 @@ section#work{
 		border-top: 2px solid black;
 		padding: 10px 0 0 0;
 		.buttons{
+			left: auto;
 			display: flex;
 			flex-direction: row; 
 			justify-content: space-between;
@@ -218,9 +402,62 @@ section#work{
 			width: 80%;
 			max-width: 1074px;
 			.project{
-
 				width: 30%;
+				a h2.selectedHeader{
+					width: 100%;
+					font-size: 2.2vw;
+				}
 			}
+		}
+	}
+	section#fullProject{
+		h2.selectedHeader{
+			font-size: 3vw;
+			text-align: center;
+			font-family: "alverata", serif;
+			font-weight: 600;
+			margin: 5px auto 0 auto;
+			width: 66%; 
+		}
+		p{
+			width: 80%; 
+		}
+		blockquote{
+			width: 80%; 
+		}
+		img#self{
+			width: 50%; 
+			margin: 100px auto;
+		}
+	}
+	section#nextProject{
+		h2.selectedHeader{
+			width: 66%; 
+			font-size: 3vw;
+		}
+	}
+	section#about{
+		overflow: hidden;
+		width: 80%;
+	    max-width: 1074px;
+	    padding: 150px 0 150px 0;
+	    div#hello{
+			margin-top: 30px;
+		    h2, h3{
+			    width: 60%; 
+			    float: right;
+			    &.selectedHeader,
+			    &.title{
+				    text-align: left;
+			    }
+		    }
+		    p{
+				text-align: left;
+		    }
+	    }
+		img#self{
+			width: 40%; 
+			float: left;
 		}
 	}
 }
@@ -232,6 +469,24 @@ section#work{
 			a h2.selectedHeader{
 				font-size: 30px;
 			}
+		}
+		#moreWork .project{
+			margin-bottom: 120px;
+			a h2.selectedHeader{
+				font-size: 25px;
+			}
+		}
+	}
+	section#fullProject{
+		h2.selectedHeader{
+			font-size: 40px;
+		}
+	}
+	section#nextProject{
+		h2.selectedHeader{
+			font-size: 4.5vw;
+			max-width: 1074px;
+			font-size: 40px;
 		}
 	}
 }
