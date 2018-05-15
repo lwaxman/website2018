@@ -1,23 +1,177 @@
-/*
-Errno::ENOENT: No such file or directory - css/style.scss
+@import url("https://use.typekit.net/hvq7vja.css");
+* {
+  margin: 0;
+  padding: 0; }
 
-Backtrace:
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:454:in `read'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - css/style.scss"; }
+a {
+  text-decoration: none;
+  color: black; }
+
+menu {
+  top: 0px;
+  position: fixed; }
+  menu .buttons {
+    display: none;
+    background: #eee;
+    width: 100vw;
+    height: 100vh; }
+    menu .buttons h3 {
+      position: relative;
+      top: 40%;
+      font-size: 24px;
+      text-align: center;
+      width: 100%; }
+      menu .buttons h3 a {
+        margin: 0 auto 30px auto;
+        display: block; }
+        menu .buttons h3 a:hover {
+          color: black;
+          font-style: italic;
+          letter-spacing: 0.7px; }
+  menu #menuToggle {
+    position: fixed;
+    top: 30px;
+    right: 30px; }
+
+section#header {
+  margin: auto;
+  height: 60vh;
+  max-height: 800px;
+  background-image: url(../images/_dots.jpg);
+  background-repeat: repeat;
+  background-size: 150px auto; }
+  section#header .introHeader {
+    font-family: "alverata", serif;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 40%;
+    width: 80%;
+    font-size: 30px;
+    max-width: 400px; }
+
+section#work {
+  margin: auto;
+  width: 100%; }
+  section#work h3.sectionTitle {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 0 40px 0;
+    border-top: 3px dotted black; }
+  section#work h3.title {
+    margin-top: 8px;
+    font-family: "alverata", serif;
+    font-size: 20px;
+    font-weight: 300; }
+  section#work h3.skills {
+    font-size: 18px;
+    font-family: "source-sans-pro", sans-serif;
+    color: #777;
+    margin-top: 5px;
+    font-weight: 300;
+    font-style: italic; }
+  section#work #selectedWork {
+    padding-top: 100px;
+    overflow: hidden;
+    margin: 0 auto 100px auto;
+    width: 80%; }
+    section#work #selectedWork .project {
+      margin-bottom: 100px;
+      width: 100%; }
+      section#work #selectedWork .project a h2.selectedHeader {
+        font-family: "alverata", serif;
+        font-weight: 600;
+        font-size: 4.5vw;
+        max-width: 600px;
+        margin-top: 5px; }
+      section#work #selectedWork .project a h3.selectedTitle {
+        margin-top: 8px;
+        font-family: "alverata", serif;
+        font-size: 17px;
+        font-weight: 300; }
+      section#work #selectedWork .project a img {
+        width: 100%; }
+  section#work #moreWork {
+    float: bottom;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto; }
+    section#work #moreWork .project {
+      width: 48%;
+      margin-bottom: 80px; }
+      section#work #moreWork .project a {
+        color: black; }
+        section#work #moreWork .project a h3.title {
+          font-weight: 500; }
+      section#work #moreWork .project img {
+        width: 100%; }
+
+@media only screen and (min-width: 992px) {
+  menu {
+    display: block;
+    width: 94%;
+    left: 3%;
+    top: 30px;
+    border-top: 2px solid black;
+    padding: 10px 0 0 0; }
+    menu .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+      font-size: auto;
+      background: none; }
+      menu .buttons h3 {
+        font-size: 18px;
+        width: auto; }
+        menu .buttons h3 a {
+          margin: 0px;
+          display: inline-block; }
+          menu .buttons h3 a#aboutButton {
+            margin-left: 30px; }
+    menu #menuToggle {
+      display: none; }
+
+  section#header .introHeader {
+    font-size: 36px;
+    max-width: 850px; }
+
+  section#work {
+    margin: 100px auto 100px auto; }
+    section#work #selectedWork {
+      width: 80%;
+      max-width: 1074px; }
+      section#work #selectedWork .project {
+        width: 48%;
+        max-width: 512px;
+        margin-bottom: 140px; }
+        section#work #selectedWork .project:hover h2.selectedHeader {
+          color: black;
+          text-decoration: underline; }
+        section#work #selectedWork .project a h2.selectedHeader {
+          width: 100%;
+          font-size: 2.2vw; }
+        section#work #selectedWork .project.left {
+          float: left; }
+        section#work #selectedWork .project.right {
+          float: right; }
+        section#work #selectedWork .project img {
+          width: 100%; }
+    section#work #moreWork {
+      padding-top: 100px;
+      width: 80%;
+      max-width: 1074px; }
+      section#work #moreWork .project {
+        width: 30%; } }
+@media only screen and (min-width: 1330px) {
+  section#work #selectedWork .project {
+    margin-bottom: 120px; }
+    section#work #selectedWork .project a h2.selectedHeader {
+      font-size: 30px; } }
+
+/*# sourceMappingURL=style.css.map */

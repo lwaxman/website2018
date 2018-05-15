@@ -1,0 +1,238 @@
+@import url("https://use.typekit.net/hvq7vja.css");
+
+*{
+	margin: 0; 
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+menu{
+	top: 0px;
+	position: fixed; 
+	.buttons{
+		display: none;
+		background: #eee;
+		width: 100vw; 
+		height: 100vh;
+		h3{
+			position: relative;
+			top: 40%;
+			font-size: 24px;
+			text-align: center;
+			a{
+				margin: 0 auto 30px auto;
+				display: block;
+				&:hover{
+					color: black;
+					font-style: italic;
+					letter-spacing: 0.7px;
+				}
+			}
+			width: 100%;
+		}
+	}
+	#menuToggle{
+		position: fixed;
+		top: 30px; 
+		right: 30px;
+	}
+}
+
+section#header{
+	margin: auto;
+	height: 60vh; 
+	max-height: 800px;
+	background-image: url(../images/_dots.jpg);
+	background-repeat: repeat;
+	background-size: 150px auto;
+	.introHeader{
+		font-family: "alverata", serif;
+		text-align: center;
+		position: relative;
+		margin: auto;
+		top: 40%;
+		width: 80%;
+		font-size: 30px;
+		max-width: 400px;
+	}
+}
+
+section#work{
+	margin: auto;
+	width: 100%;
+	h3.sectionTitle{
+		font-size: 18px;
+		width: 100%; 
+		padding: 10px 0 40px 0;
+		border-top: 3px dotted black;
+	}
+	h3.title{
+		margin-top: 8px;
+		font-family: "alverata", serif;
+		font-size: 20px;
+		font-weight: 300;
+	}
+	h3.skills{
+		font-size: 18px;
+		font-family: "source-sans-pro", sans-serif;
+		color: #777;
+		margin-top: 5px;
+		font-weight: 300; 
+		font-style: italic;
+	}
+	#selectedWork{
+		padding-top: 100px;
+		overflow:hidden;
+		margin: 0 auto 100px auto;
+		width: 80%;
+		.project{
+			margin-bottom: 100px;
+			width: 100%;
+			a{
+				h2.selectedHeader{
+					font-family: "alverata", serif;
+					font-weight: 600;
+					// font-size: 30px;
+					font-size: 4.5vw;
+					max-width: 600px;
+					margin-top: 5px;
+					
+				}
+				h3.selectedTitle{
+					margin-top: 8px;
+					font-family: "alverata", serif;
+					font-size: 17px;
+					font-weight: 300;
+				}
+
+				img{
+					width: 100%;
+				}
+			
+			}
+		}
+
+	}
+	#moreWork{
+		float: bottom;
+		display: flex;
+		flex-direction: row; 
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: space-between;
+		width: 80%;
+		margin: auto;
+		.project{
+			width: 48%;
+			margin-bottom: 80px;
+			a{
+				color: black;
+				h3.title{
+					font-weight: 500;
+				}
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+
+// @media (min-width: 1200px) and (orientation: landscape){
+@media only screen and (min-width: 992px){
+	menu{
+		display: block;
+		width: 94%;
+		left: 3%;
+		top: 30px;
+		border-top: 2px solid black;
+		padding: 10px 0 0 0;
+		.buttons{
+			display: flex;
+			flex-direction: row; 
+			justify-content: space-between;
+			width: 100%;
+			height: auto;
+			font-size: auto;
+			background: none;
+			h3{
+				font-size: 18px;
+				width: auto;
+				a{	
+					margin: 0px;
+					display: inline-block;
+					&#aboutButton{
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+		#menuToggle{
+			display: none;
+		}
+	}
+	section#header{
+		.introHeader{
+			font-size: 36px;
+			max-width: 850px;
+		}
+	}
+	section#work{
+		margin: 100px auto 100px auto;
+		#selectedWork{
+			width: 80%;
+			max-width: 1074px;
+			.project{
+				width: 48%;
+				max-width: 512px;
+				margin-bottom: 140px;
+				&:hover h2.selectedHeader{
+					color: black;
+					text-decoration: underline;
+				}
+				a h2.selectedHeader{
+					width: 100%;
+					font-size: 2.2vw;
+				}
+				&.left{
+					float: left;
+				}
+				&.right{
+					float: right;
+				}
+				img{
+					width: 100%;
+				}
+			}
+		}
+		#moreWork{
+			padding-top: 100px;
+			width: 80%;
+			max-width: 1074px;
+			.project{
+
+				width: 30%;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1330px){
+	section#work{
+		#selectedWork .project{
+			margin-bottom: 120px;
+			a h2.selectedHeader{
+				font-size: 30px;
+			}
+		}
+	}
+}
+
