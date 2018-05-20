@@ -10,6 +10,10 @@ a{
 	color: black;
 }
 
+.italic{
+	font-style: italic;
+}
+
 menu{
 	top: 0px;
 	position: fixed; 
@@ -49,8 +53,9 @@ menu{
 
 section#header{
 	margin: auto;
-	height: 60vh; 
-	max-height: 800px;
+	padding: 200px 0;
+	// height: 60vh; 
+	// max-height: 800px;
 	background-image: url(../images/_dots.jpg);
 	background-repeat: repeat;
 	background-size: 150px auto;
@@ -63,6 +68,9 @@ section#header{
 		width: 80%;
 		font-size: 4.5vw;
 		max-width: 600px;
+		a{
+			font-style: italic;
+		}
 	}
 }
 
@@ -79,6 +87,11 @@ p{
 	}
 }
 
+p.blockquote{
+	border-left: 2px solid black;
+	padding-left: 30px;
+}
+
 blockquote{
 	font-family: "source-sans-pro", sans-serif;
 	font-weight: 300; 
@@ -90,26 +103,26 @@ blockquote{
 }
 
 h3.sectionTitle{
-	font-size: 18px;
+	font-size: 20px;
 	width: 100%; 
 	padding: 10px 0 40px 0;
 	border-top: 3px dotted black;
 }
 h3.title{
 	margin-top: 8px;
+	margin-bottom: 5px;
 	font-family: "alverata", serif;
 	font-size: 20px;
 	font-weight: 300;
 }
 h3.skills{
-	font-size: 18px;
+	font-size: 20px;
 	font-family: "source-sans-pro", sans-serif;
-	color: #66676B;
-	margin-top: 5px;
+	color: #62656f;
+	margin-top: 8px;
 	font-weight: 300; 
-	font-style: italic;
+	// font-style: italic;
 }
-
 section#work{
 	margin: auto;
 	width: 100%;
@@ -228,6 +241,13 @@ section#fullProject{
 		// overflow: hidden;
 		top: 50px;
 		position: relative;
+		&.intro{
+			font-family: "alverata", serif;
+			line-height: 30px;
+			font-size: 20px;
+			// font-weight: 600;
+			// font-size: 24px;
+		}
 	}
 	div.img-group{
 		position: relative;
@@ -264,7 +284,7 @@ section#nextProject{
 				text-align: center;
 				font-family: "alverata", serif;
 				font-weight: 600;
-				width: 66%;
+				// width: 66%;
 				margin: 5px auto 0 auto;
 			}
 			h3.skills{
@@ -291,14 +311,18 @@ section#about{
     position: relative;
 	img#self, 
 	div#hello{
+		align-self: flex-start;
 		width: 100%;
 		h2, h3{
-			text-align: center;
 			&.title{
-				margin-bottom: 5px;
+				margin-bottom: 20px;
 			}
 			&.selectedHeader{
-				margin-bottom: 50px;
+				margin-bottom: 40px;
+				// line-height: 2.2vw;
+				font-size: 3.8vw;
+				// margin-top: 5px;
+					
 			}
 		}
 
@@ -316,13 +340,16 @@ section#footer{
 	text-align: center;
 	padding: 50px 0 50px 0;
 	h3{
+		color: #62656f;
 		font-size: 18px;
 		font-family: "source-sans-pro", sans-serif;
 		margin-top: 5px;
 		font-weight: 300; 
-		font-style: italic;
-		a:hover{
-			text-decoration: underline;
+		a{
+			color: #62656f;
+			&:hover{
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -377,7 +404,7 @@ section#footer{
 			.project{
 				width: 48%;
 				max-width: 512px;
-				margin-bottom: 140px;
+				margin-bottom: 100px;
 				&:hover h2.selectedHeader{
 					color: black;
 					text-decoration: underline;
@@ -439,16 +466,21 @@ section#footer{
 	section#about{
 		overflow: hidden;
 		width: 80%;
-	    max-width: 1074px;
+	    max-width: 1330px;
 	    padding: 150px 0 150px 0;
+	    display: flex;
+		justify-content: center;
+		// flex-direction: column;
 	    div#hello{
-			margin-top: 30px;
+		    width: 50%; 
 		    h2, h3{
-			    width: 60%; 
-			    float: right;
-			    &.selectedHeader,
 			    &.title{
 				    text-align: left;
+			    }
+			    &.selectedHeader{	
+					text-align: left;
+					font-size: 1.8vw;
+					line-height: 2.4vw;
 			    }
 		    }
 		    p{
@@ -456,8 +488,7 @@ section#footer{
 		    }
 	    }
 		img#self{
-			width: 40%; 
-			float: left;
+			width: 38%; 
 		}
 	}
 }
@@ -487,6 +518,18 @@ section#footer{
 			font-size: 4.5vw;
 			max-width: 1074px;
 			font-size: 40px;
+		}
+	}
+	section#about{
+		img#self, 
+		div#hello{
+			align-self: center;
+		}
+		div#hello{
+			h2.selectedHeader{
+				font-size: 24px;
+				line-height: 30px;
+			}
 		}
 	}
 }
