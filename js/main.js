@@ -12,7 +12,6 @@ $(document).ready(function(){
 		}
 	});
 
-
 	$('#workButton').on('click', function(event){
 		if( $(this).hasClass("index") ){
 		    event.preventDefault();

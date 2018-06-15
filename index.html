@@ -8,9 +8,10 @@
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body class="dark">
+		<canvas id="headerCanvas"></canvas>
 		<section id="header">
-			<h2 class="introHeader">Hi, I&rsquo;m Laurie, a designer, technologist and graphic artist based in Brooklyn. I&rsquo;m currently looking for a full-time position, <a href="mailto:hello@lauriewaxman.com">reach out!</a></h2>
+			<h2 class="introHeader">Hi, I&rsquo;m Laurie, a graphic designer and technologist based in Brooklyn&mdash;currently seeking a full-time position, <a href="mailto:hello@lauriewaxman.com" target="_blank">reach out!</a></h2>
 		</section>
 		<section id="work">
       		<div id="selectedWork">
@@ -19,7 +20,7 @@
 					<a href="work/gentex.html">
 						<img src="images/gentex-00.png" alt="">
 						<h3 class="title">Gentex Vehicle Simulator</h3>
-						<h2 class="selectedHeader">Showing off Gentex technologies in a user-friendly set-up.</h2>
+						<h2 class="selectedHeader">Showing off Gentex technologies in an immersive experience.</h2>
 						<h3 class="skills">user experience, visual design</h3>
 					</a>
 				</div>
@@ -42,8 +43,8 @@
 				<div class="project right">
 					<a href="work/patron.html">
 						<img src="images/patron-00.png" alt="">
-						<h3 class="title">The Patron Experience</h3>
-						<h2 class="selectedHeader">Educating customers on Patron tequila in augmented reality.</h2>
+						<h3 class="title">The Patrón Experience</h3>
+						<h2 class="selectedHeader">Educating customers on Patrón tequila in augmented reality.</h2>
 						<h3 class="skills">user experience, visual design, 3d</h3>
 					</a>
 				</div>
@@ -60,7 +61,7 @@
 						<img src="images/alphabet-00.png" alt="">
 						<h3 class="title">Alphabet Iteration</h3>
 						<h2 class="selectedHeader">A typographic experiment.</h2>
-						<h3 class="skills">typography, creative coding, print, interactive</h3>
+						<h3 class="skills">typography, creative coding, print</h3>
 					</a>
 				</div>
 				<div class="project left">
@@ -75,7 +76,7 @@
 					<a href="work/sproutkernel.html">
 						<img src="images/sproutkernel-00.png" alt="">
 						<h3 class="title">Sprout & Kernel</h3>
-						<h2 class="selectedHeader">Mock rebranding of a nut-based cheese company.</h2>
+						<h2 class="selectedHeader">A new visual identity for a nut-based cheese company.</h2>
 						<h3 class="skills">branding, lettering, web design</h3>
 					</a>
 				</div>
@@ -105,5 +106,6 @@
 			<img id="menuToggle" src="images/_menuToggle.png" alt="menu">
 		</menu>
 		<script src="js/main.js"></script>
+		<script src="js/canvas.js"></script>
     </body>
 </html>

@@ -3,9 +3,14 @@
   margin: 0;
   padding: 0; }
 
+body.dark {
+  background: #E0ECFF; }
+
 a {
   text-decoration: none;
-  color: black; }
+  color: #365FFF; }
+  a:hover {
+    color: #2626C4; }
 
 .italic {
   font-style: italic; }
@@ -16,7 +21,7 @@ menu {
   menu .buttons {
     position: absolute;
     left: 100vw;
-    background: #eee;
+    background: #191163;
     width: 100vw;
     height: 100vh;
     transition: left 1s; }
@@ -29,10 +34,6 @@ menu {
       menu .buttons h3 a {
         margin: 0 auto 30px auto;
         display: block; }
-        menu .buttons h3 a:hover {
-          color: black;
-          font-style: italic;
-          letter-spacing: 0.7px; }
   menu #menuToggle {
     position: fixed;
     width: 8vw;
@@ -41,52 +42,49 @@ menu {
     top: 30px;
     right: 30px; }
 
+#headerCanvas {
+  display: none; }
+
 section#header {
   margin: auto;
-  padding: 200px 0;
-  background-image: url(../images/_dots.jpg);
-  background-repeat: repeat;
-  background-size: 150px auto; }
+  padding: 200px 0; }
   section#header .introHeader {
     font-family: "alverata", serif;
     text-align: center;
     position: relative;
+    color: #365FFF;
     margin: auto;
     top: 40%;
     width: 80%;
-    font-size: 4.5vw;
-    max-width: 600px; }
+    font-size: 4.5vw; }
     section#header .introHeader a {
       font-style: italic; }
 
 p {
-  font-family: "source-sans-pro", sans-serif;
+  font-family: "source-sans-pro", "helvetica", sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 20px; }
-  p a {
-    font-style: italic; }
-    p a:hover {
-      text-decoration: underline; }
 
 p.blockquote {
-  border-left: 2px solid black;
+  border-left: 2px solid #365FFF;
   padding-left: 30px; }
 
 blockquote {
-  font-family: "source-sans-pro", sans-serif;
+  font-family: "source-sans-pro", "helvetica", sans-serif;
   font-weight: 300;
   margin: 100px auto;
   font-size: 22px;
   margin-bottom: 20px;
-  border-left: 2px solid black;
+  border-left: 2px solid #365FFF;
   padding-left: 30px; }
 
 h3.sectionTitle {
   font-size: 20px;
   width: 100%;
   padding: 10px 0 40px 0;
-  border-top: 3px dotted black; }
+  color: #365FFF;
+  border-top: 3px dotted #365FFF; }
 
 h3.title {
   margin-top: 8px;
@@ -97,27 +95,42 @@ h3.title {
 
 h3.skills {
   font-size: 20px;
-  font-family: "source-sans-pro", sans-serif;
-  color: #62656f;
-  margin-top: 8px;
+  font-family: "source-sans-pro", "helvetica", sans-serif;
+  color: #365FFF;
+  margin-top: 5px;
   font-weight: 300; }
 
+@keyframes slide-work {
+  from {
+    top: 150px;
+    opacity: 0; }
+  to {
+    top: 0px;
+    opacity: 1; } }
 section#work {
+  animation: slide-work 1500ms forwards;
   margin: auto;
+  position: relative;
+  top: 0px;
   width: 100%; }
   section#work #selectedWork {
-    padding-top: 100px;
     overflow: hidden;
     margin: 0 auto 100px auto;
     width: 80%; }
     section#work #selectedWork .project {
       margin-bottom: 100px;
       width: 100%; }
+      section#work #selectedWork .project a:hover h2.selectedHeader,
+      section#work #selectedWork .project a:hover h3.selectedTitle,
+      section#work #selectedWork .project a:hover h3.skills {
+        color: #2626C4; }
+      section#work #selectedWork .project a:hover img {
+        outline: solid 10px #2626C4;
+        outline-offset: -10px; }
       section#work #selectedWork .project a h2.selectedHeader {
         font-family: "alverata", serif;
         font-weight: 600;
         font-size: 4.5vw;
-        max-width: 600px;
         margin-top: 5px; }
       section#work #selectedWork .project a h3.selectedTitle {
         margin-top: 8px;
@@ -125,18 +138,22 @@ section#work {
         font-size: 17px;
         font-weight: 300; }
       section#work #selectedWork .project a img {
-        width: 100%; }
+        background: #E0ECFF;
+        width: 100%;
+        outline-offset: 0px;
+        transition: all 300ms; }
       section#work #selectedWork .project a#viewMore h3 {
         padding: 50px 0 50px 0;
-        border: 3px dotted black;
+        border: 3px dotted #365FFF;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         width: 100%;
         text-align: center; }
         section#work #selectedWork .project a#viewMore h3:hover {
-          background: #eee; }
-  section#work #moreWork {
+          border: 3px dotted #2626C4;
+          background: rgba(0, 51, 255, 0.1); }
+  section#work .moreWork {
     float: bottom;
     display: flex;
     flex-direction: row;
@@ -145,28 +162,46 @@ section#work {
     justify-content: space-between;
     width: 80%;
     margin: auto; }
-    section#work #moreWork .project {
+    section#work .moreWork .project {
       width: 100%;
       margin-bottom: 80px; }
-      section#work #moreWork .project a {
-        color: black; }
-        section#work #moreWork .project a h3.title {
-          font-weight: 500; }
-        section#work #moreWork .project a h2.selectedHeader {
+      section#work .moreWork .project a {
+        color: #365FFF; }
+        section#work .moreWork .project a h3.title {
+          font-weight: 400; }
+        section#work .moreWork .project a h2.selectedHeader {
           font-family: "alverata", serif;
           font-weight: 600;
           font-size: 4.5vw;
           max-width: 600px;
           margin-top: 5px; }
-        section#work #moreWork .project a h3.selectedTitle {
+        section#work .moreWork .project a h3.selectedTitle {
           margin-top: 8px;
           font-family: "alverata", serif;
           font-size: 17px;
           font-weight: 300; }
-      section#work #moreWork .project img {
-        width: 100%; }
+        section#work .moreWork .project a:hover h2.selectedHeader {
+          text-decoration: underline; }
+        section#work .moreWork .project a:hover h3.title,
+        section#work .moreWork .project a:hover h2.selectedHeader,
+        section#work .moreWork .project a:hover h3.selectedTitle,
+        section#work .moreWork .project a:hover h3.skills {
+          color: #2626C4; }
+      section#work .moreWork .project img {
+        width: 100%;
+        outline-offset: 0px;
+        transition: all 300ms; }
 
+@keyframes slide-project {
+  from {
+    top: 300px;
+    opacity: 0; }
+  to {
+    top: 150px;
+    opacity: 1; } }
 section#fullProject {
+  animation: slide-project 1500ms forwards;
+  -webkit-animation: slide-project 1500ms forwards;
   position: relative;
   width: 80%;
   max-width: 1074px;
@@ -186,7 +221,8 @@ section#fullProject {
   section#fullProject .header {
     margin: auto;
     width: 100%;
-    max-width: 1074px; }
+    max-width: 1074px;
+    color: #365FFF; }
   section#fullProject p {
     margin: 0 auto 20px auto;
     top: 50px;
@@ -198,10 +234,11 @@ section#fullProject {
   section#fullProject div.img-group {
     position: relative;
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     display: block;
     overflow: hidden; }
     section#fullProject div.img-group video.big, section#fullProject div.img-group img.big {
+      background: #E0ECFF;
       width: 100%;
       margin-top: -4px; }
     section#fullProject div.img-group img.small {
@@ -212,10 +249,8 @@ section#nextProject {
   width: 100%;
   text-align: center;
   margin-top: 200px;
-  padding: 50px 0 60px 0;
-  background-image: url(../images/_dots.jpg);
-  background-repeat: repeat;
-  background-size: 150px auto; }
+  padding: 40px 0 70px 0;
+  background: #E0ECFF; }
   section#nextProject .header {
     width: 80%;
     max-width: 1074px;
@@ -227,15 +262,26 @@ section#nextProject {
         font-family: "alverata", serif;
         font-weight: 600;
         margin: 5px auto 0 auto; }
-      section#nextProject .header a h3.skills {
-        color: #454b62; }
       section#nextProject .header a p {
-        font-size: 18px;
-        color: #454b62; }
+        font-size: 18px; }
       section#nextProject .header a:hover h2.selectedHeader {
-        text-decoration: underline; }
+        text-decoration: underline;
+        color: #2626C4; }
+      section#nextProject .header a:hover h2.selectedHeader,
+      section#nextProject .header a:hover h3.skills,
+      section#nextProject .header a:hover h3.title {
+        color: #2626C4; }
 
+@keyframes slide-about {
+  from {
+    top: 100px;
+    opacity: 0; }
+  to {
+    top: 0px;
+    opacity: 1; } }
 section#about {
+  animation: slide-about 1000ms forwards;
+  top: 0px;
   width: 80%;
   max-width: 1074px;
   padding: 50px 0 100px 0;
@@ -244,7 +290,8 @@ section#about {
   section#about img#self,
   section#about div#hello {
     align-self: flex-start;
-    width: 100%; }
+    width: 100%;
+    color: #365FFF; }
     section#about img#self h2.title, section#about img#self h3.title,
     section#about div#hello h2.title,
     section#about div#hello h3.title {
@@ -259,29 +306,36 @@ section#about {
       margin-bottom: 20px; }
 
 section#footer {
-  background: #eee;
+  background: #191163;
   position: absolute;
   width: 100%;
   text-align: center;
   padding: 50px 0 50px 0; }
   section#footer h3 {
-    color: #62656f;
+    color: #365FFF;
     font-size: 18px;
-    font-family: "source-sans-pro", sans-serif;
+    font-family: "source-sans-pro", "helvetica", sans-serif;
     margin-top: 5px;
     font-weight: 300; }
     section#footer h3 a {
-      color: #62656f; }
+      color: #365FFF; }
       section#footer h3 a:hover {
-        text-decoration: underline; }
+        color: #2626C4; }
 
 @media only screen and (min-width: 992px) {
+  #headerCanvas {
+    display: block;
+    z-index: -100;
+    position: fixed;
+    top: 0px;
+    left: 0px; }
+
   menu {
     display: block;
     width: 94%;
     left: 3%;
     top: 30px;
-    border-top: 2px solid black;
+    border-top: 2px solid #365FFF;
     padding: 10px 0 0 0; }
     menu .buttons {
       left: auto;
@@ -303,9 +357,11 @@ section#footer {
     menu #menuToggle {
       display: none; }
 
-  section#header .introHeader {
-    font-size: 36px;
-    max-width: 850px; }
+  section#header {
+    padding: 200px 0 100px 0; }
+    section#header .introHeader {
+      font-size: 36px;
+      max-width: 850px; }
 
   section#work {
     margin: 100px auto 100px auto; }
@@ -317,24 +373,25 @@ section#footer {
         max-width: 512px;
         margin-bottom: 100px; }
         section#work #selectedWork .project:hover h2.selectedHeader {
-          color: black;
+          color: #365FFF;
           text-decoration: underline; }
         section#work #selectedWork .project a h2.selectedHeader {
           width: 100%;
-          font-size: 2.2vw; }
+          font-size: 2.2vw;
+          max-width: 600px; }
         section#work #selectedWork .project.left {
           float: left; }
         section#work #selectedWork .project.right {
           float: right; }
         section#work #selectedWork .project img {
           width: 100%; }
-    section#work #moreWork {
+    section#work .moreWork {
       padding-top: 100px;
       width: 80%;
       max-width: 1074px; }
-      section#work #moreWork .project {
+      section#work .moreWork .project {
         width: 30%; }
-        section#work #moreWork .project a h2.selectedHeader {
+        section#work .moreWork .project a h2.selectedHeader {
           width: 100%;
           font-size: 2.2vw; }
 
@@ -375,15 +432,16 @@ section#footer {
       section#about div#hello p {
         text-align: left; }
     section#about img#self {
-      width: 38%; } }
+      width: 38%;
+      margin-right: 30px; } }
 @media only screen and (min-width: 1330px) {
   section#work #selectedWork .project {
     margin-bottom: 120px; }
     section#work #selectedWork .project a h2.selectedHeader {
       font-size: 30px; }
-  section#work #moreWork .project {
+  section#work .moreWork .project {
     margin-bottom: 120px; }
-    section#work #moreWork .project a h2.selectedHeader {
+    section#work .moreWork .project a h2.selectedHeader {
       font-size: 25px; }
 
   section#fullProject h2.selectedHeader {
