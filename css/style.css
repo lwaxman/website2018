@@ -138,7 +138,6 @@ section#work {
         font-size: 17px;
         font-weight: 300; }
       section#work #selectedWork .project a img {
-        background: #E0ECFF;
         width: 100%;
         outline-offset: 0px;
         transition: all 300ms; }
@@ -238,7 +237,6 @@ section#fullProject {
     display: block;
     overflow: hidden; }
     section#fullProject div.img-group video.big, section#fullProject div.img-group img.big {
-      background: #E0ECFF;
       width: 100%;
       margin-top: -4px; }
     section#fullProject div.img-group img.small {
@@ -326,7 +324,7 @@ section#footer {
   #headerCanvas {
     display: block;
     z-index: -100;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px; }
 
@@ -358,13 +356,15 @@ section#footer {
       display: none; }
 
   section#header {
-    padding: 200px 0 100px 0; }
+    padding: 0px 0 0px 0;
+    height: 60vh;
+    vertical-align: center; }
     section#header .introHeader {
       font-size: 36px;
       max-width: 850px; }
 
   section#work {
-    margin: 100px auto 100px auto; }
+    margin: 0px auto 100px auto; }
     section#work #selectedWork {
       width: 80%;
       max-width: 1074px; }

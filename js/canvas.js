@@ -1,7 +1,7 @@
 var canvas = document.getElementById('headerCanvas');
 var c = canvas.getContext("2d");
 width = window.innerWidth;
-height = window.innerHeight;
+height = window.innerHeight*0.6;
 canvas.width = width;
 canvas.height = height;
 
@@ -20,7 +20,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 function setup(){
 	width = window.innerWidth;
-	height = window.innerHeight;
+	height = window.innerHeight*0.6;
 	canvas.width = width;
 	canvas.height = height;
 	background("rgba(224,236,255,1)");
@@ -73,6 +73,7 @@ function background(color){
     c.rect(0, 0, width, height);
     c.fillStyle = color;
     c.fill();
+    c.closePath();
 }
 
 document.onmousemove = function(e){
