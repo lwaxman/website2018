@@ -1,7 +1,7 @@
 var canvas = document.getElementById('headerCanvas');
 var c = canvas.getContext("2d");
 width = window.innerWidth;
-height = window.innerHeight*0.6;
+height = window.innerHeight*0.75;
 canvas.width = width;
 canvas.height = height;
 
@@ -20,7 +20,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 function setup(){
 	width = window.innerWidth;
-	height = window.innerHeight*0.6;
+	height = window.innerHeight*0.75;
 	canvas.width = width;
 	canvas.height = height;
 	background("rgba(224,236,255,1)");

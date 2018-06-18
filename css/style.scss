@@ -78,7 +78,6 @@ section#header{
 		top: 40%;
 		width: 80%;
 		font-size: 4.5vw;
-		// max-width: 600px;
 		a{
 			font-style: italic;
 		}
@@ -470,7 +469,8 @@ section#footer{
 	}
 	section#header{
 		padding: 0px 0 0px 0;
-		height: 60vh;
+		height: 75vh;
+		// max-height: 1200px;
 		vertical-align: center;
 		.introHeader{
 			font-size: 36px;
